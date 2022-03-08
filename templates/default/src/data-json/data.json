@@ -1,0 +1,6300 @@
+{
+	"json": {
+		"popupEditFilter": [
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Магазины и менеджеры",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Статус и источник заказа",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Регион и дата",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Поставщики",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Финансовая группа",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Контроль",
+						"selected": true
+					}
+				]
+			}
+		],
+		"example": [],
+		"popupEditTable": [
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Магазин",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "№ заказа Источник",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Поставщик № заказа постав",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "№ организации",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Статус заказа",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Дата и время заказа",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Дата отгрузки заказа ",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Адрес самовывоза",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Состав заказа",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Количество",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Цена на сайте",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "РРЦ",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Цена продаж",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Цена закупки",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Комиссия",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Менеджер",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Город",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Способ оплаты",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Установка",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Штрафы",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Согласовано клиент",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Согласовано Поставщик",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Тест",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Контакты клиента",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Комментарии",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Доставка с нас",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Доставка с клиента",
+						"selected": true
+					}
+				]
+			},
+			{
+				"selectData": [
+					{
+						"text": "Рыба текст"
+					},
+					{
+						"text": "Закупщик",
+						"selected": true
+					}
+				]
+			}
+		],
+		"ordersFilterTop": [
+			{
+				"additionalClasses": "",
+				"titleText": "По № счета / заказа",
+				"macro": {
+					"opts": {
+						"placeholder": "Введите номер заказа"
+					}
+				}
+			},
+			{
+				"additionalClasses": "orders__filter-top-elem--wide",
+				"titleText": "По данным клиента",
+				"macro": {
+					"opts": {
+						"placeholder": "Поиск по ФИО, телефону, email и адрес"
+					}
+				}
+			},
+			{
+				"additionalClasses": "",
+				"titleText": "По названию товара",
+				"macro": {
+					"opts": {
+						"placeholder": "модель, название, юнид"
+					}
+				}
+			}
+		],
+		"tOrders": {
+			"additionalClasses": "",
+			"elems": {
+				"table": {
+					"modifs": [],
+					"elems": {
+						"rols": {
+							"tbody": {
+								"modifs": []
+							},
+							"tfoot": {
+								"modifs": []
+							}
+						},
+						"cell": {
+							"tbody": {
+								"modifs": []
+							},
+							"tfoot": {
+								"modifs": []
+							}
+						}
+					}
+				},
+				"footer": {
+					"isPagination": true,
+					"isAmountElems": true
+				}
+			},
+			"tableData": {
+				"theadArray": [
+					{
+						"elems": {
+							"content": {
+								"value": "Магазин"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "№ заказа Источник"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Поставщик № заказа поставщика"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "№ организации"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Статус заказа"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Дата и время заказа"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Дата отгрузки заказа "
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Адрес самовывоза"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Состав заказа"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Количество"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Цена на сайте"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "РРЦ"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Цена продаж"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Цена закупки"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Комиссия"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Комиссия поставщика"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Менеджер"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Город"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Способ оплаты"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Установка"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Штрафы"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Согласовано клиент"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Согласовано Поставщик"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Тест"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Контакты клиента"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Комментарии"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Доставка с нас"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Доставка&nbsp;с&nbsp;клиента"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"value": "Закупщик"
+							}
+						}
+					}
+				],
+				"tbodyArrays": [
+					[
+						{
+							"tdArray": [
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "ХАУСДОРФ 1233444"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Назначена доставка",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "20.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Кофемашина KM 70/20 C"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-green txt-bold'>+ 2 256</span>"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "С 9.00 до 18.00 за час позвонить Нет, аналогов нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date",
+												"value": "24-11-2021"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "15:57"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "16 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "15 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "13 560"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "13 560"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "2 430"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-green txt-bold'>+ 2 256</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold txt-centr",
+												"value": "ИТОГО"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "2"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "73 180"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "70 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "12 000"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						}
+					],
+					[
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "НТК 1234455"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "19.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "г. Москва, ул. Борисовские Пруды, д. 18к1, этаж 4, кв. 81"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "С 9.00 до 18.00 за час позвонить Нет, аналогов нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						}
+					],
+					[
+						{
+							"tdArray": [
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "НТК 1234455"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "19.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Кофемашина KM 70/20 C"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-accent txt-bold'>- 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-accent txt-bold'>- 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold txt-centr",
+												"value": "ИТОГО"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "2"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "73 180"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "70 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "12 000"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						}
+					],
+					[
+						{
+							"tdArray": [
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "НТК 1234455"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "19.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Кофемашина KM 70/20 C"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-accent txt-bold'>- 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-green txt-bold'>+ 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold txt-centr",
+												"value": "ИТОГО"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "2"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "73 180"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "70 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "12 000"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						}
+					],
+					[
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "НТК 1234455"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "19.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "г. Москва, ул. Борисовские Пруды, д. 18к1, этаж 4, кв. 81"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "С 9.00 до 18.00 за час позвонить Нет, аналогов нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						}
+					],
+					[
+						{
+							"tdArray": [
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "НТК 1234455"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "19.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Кофемашина KM 70/20 C"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-accent txt-bold'>- 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-accent txt-bold'>- 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold txt-centr",
+												"value": "ИТОГО"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "2"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "73 180"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "70 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "12 000"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						}
+					],
+					[
+						{
+							"tdArray": [
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link--dashed",
+												"value": "techno-pride.ru"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "864727"
+											},
+											{
+												"value": "Телефон"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Техпорт",
+														"selected": true
+													}
+												]
+											},
+											{
+												"typeContent": "input-text",
+												"value": "864727"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-text",
+												"value": "НТК 1234455"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "Оплачен. Ждем поставки",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "19.11.2021, 14:36:40"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "input-date"
+											},
+											{
+												"typeContent": "input-text",
+												"value": "14:36"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Кофемашина KM 70/20 C"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-red",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-accent txt-bold'>- 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Плюснин Евгений"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Москва"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"typeContent": "select",
+												"value": [
+													{
+														"text": "Рыба текст 1"
+													},
+													{
+														"text": "нет",
+														"selected": true
+													}
+												]
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"additionalClasses": "base-table__td--bgc-blue",
+									"elems": {
+										"content": [
+											{
+												"value": "Виден Надежда Васильевна"
+											},
+											{
+												"typeContent": "link",
+												"value": "+79201942001"
+											},
+											{
+												"typeContent": "link",
+												"value": "nvwiden@gmail.com"
+											},
+											{
+												"value": "г. Москва, ул. Ходынский б-р, д. 8"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "-"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"rowspan": 3,
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"typeContent": "link",
+												"value": "Тостер Bosch HMW 650 B"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "56 190"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "55 000"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "45 430"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "9 570"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": "<span>12 320</span> <span class='txt-green txt-bold'>+ 1 000</span>"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Карта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "3 456"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "Нет"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "0"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold txt-centr",
+												"value": "ИТОГО"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "2"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "73 180"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "70 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "58 990"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "12 000"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		},
+		"tSum": {
+			"additionalClasses": "",
+			"elems": {
+				"table": {
+					"additionalClasses": "js-tablesort",
+					"modifs": [],
+					"elems": {
+						"rols": {
+							"tbody": {
+								"modifs": [
+									"border-b"
+								]
+							},
+							"tfoot": {
+								"modifs": []
+							}
+						},
+						"cell": {
+							"tbody": {
+								"modifs": []
+							},
+							"tfoot": {
+								"modifs": []
+							}
+						}
+					}
+				}
+			},
+			"tableData": {
+				"theadArray": [
+					{
+						"elems": {
+							"content": {
+								"value": "Статусы"
+							}
+						}
+					},
+					{
+						"elems": {
+							"content": {
+								"methodSort": "number",
+								"value": "Товары"
+							}
+						}
+					},
+					{
+						"methodSort": "number",
+						"elems": {
+							"content": {
+								"value": "Заказы"
+							}
+						}
+					},
+					{
+						"methodSort": "number",
+						"elems": {
+							"content": {
+								"value": "Цена продажи"
+							}
+						}
+					},
+					{
+						"methodSort": "number",
+						"elems": {
+							"content": {
+								"value": "Цена закупки"
+							}
+						}
+					},
+					{
+						"methodSort": "number",
+						"elems": {
+							"content": {
+								"value": "Комиссия"
+							}
+						}
+					},
+					{
+						"methodSort": "number",
+						"elems": {
+							"content": {
+								"value": "Комиссия поставщика"
+							}
+						}
+					}
+				],
+				"tbodyArrays": [
+					[
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Новый"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 3
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 11
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 89770
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "54 888"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "34 882"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "1 300"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "В обработке"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Ищем"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Ждём поставки"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 2
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "2"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "38 070"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "24 465"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "12 555"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "1 200"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Ждём оплату"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 11
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "30 890"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "20 387"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "10 503"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Оплачен"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Назначена доставка"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Согласована доставка"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Не согласована доставка"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Оформлен"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 55
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "В проблеме"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Проблема закрыта"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Отказ"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 637
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "4"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "70 650"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "44 072"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "26 578"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Дубль"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Частично отгружен"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Закупка"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Оплачен. Ждем поставки"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Рекламация"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Сервисный"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Недозвон"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": 8
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "1"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "13 290"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "8 771"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": "4 519"
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"tdArray": [
+								{
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": "Самовывоз"
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"elems": {
+										"content": [
+											{
+												"value": ""
+											}
+										]
+									}
+								},
+								{
+									"additionalClasses": "base-table__td--bgc-green",
+									"elems": {
+										"content": [
+											{
+												"additionalClasses": "txt-bold",
+												"value": ""
+											}
+										]
+									}
+								}
+							]
+						}
+					]
+				],
+				"tfootArray": [
+					{
+						"noSort": true,
+						"tdArray": [
+							{
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "ИТОГО"
+										}
+									]
+								}
+							},
+							{
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "14"
+										}
+									]
+								}
+							},
+							{
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "20"
+										}
+									]
+								}
+							},
+							{
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "253 460"
+										}
+									]
+								}
+							},
+							{
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "159 818"
+										}
+									]
+								}
+							},
+							{
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "92 242"
+										}
+									]
+								}
+							},
+							{
+								"additionalClasses": "base-table__td--bgc-green",
+								"elems": {
+									"content": [
+										{
+											"additionalClasses": "txt-bold",
+											"value": "2 500"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"ordersFiltersGroup": [
+			{
+				"modifs": [
+					"wide"
+				],
+				"elems": {
+					"titleTxt": "Статусы",
+					"tagsData": [
+						"Выбрать все",
+						"Отгружен",
+						"Не отгружен"
+					],
+					"main": {
+						"mainData": [
+							{
+								"type": "checkbox",
+								"value": "Новый"
+							},
+							{
+								"type": "checkbox",
+								"value": "Ищем"
+							},
+							{
+								"type": "checkbox",
+								"value": "Ждём оплату"
+							},
+							{
+								"type": "checkbox",
+								"value": "Отказ"
+							},
+							{
+								"type": "checkbox",
+								"value": "Частично отгружен"
+							},
+							{
+								"type": "checkbox",
+								"value": "Оплачен. Ждем поставки"
+							},
+							{
+								"type": "checkbox",
+								"value": "С напоминанием",
+								"elems": {
+									"tooltip": true
+								}
+							},
+							{
+								"type": "checkbox",
+								"value": "В обработке"
+							},
+							{
+								"type": "checkbox",
+								"value": "Ждём поставки"
+							},
+							{
+								"type": "checkbox",
+								"value": "Оплачен"
+							},
+							{
+								"type": "checkbox",
+								"value": "Дубль"
+							},
+							{
+								"type": "checkbox",
+								"value": "Закупка"
+							},
+							{
+								"type": "checkbox",
+								"value": "Рекламация"
+							},
+							{
+								"type": "checkbox",
+								"value": "Самовывоз"
+							}
+						]
+					}
+				}
+			},
+			{
+				"elems": {
+					"titleTxt": "Форма оплаты",
+					"tagsData": [
+						"Выбрать все"
+					],
+					"main": {
+						"mainData": [
+							{
+								"type": "checkbox",
+								"value": "Наличные"
+							},
+							{
+								"type": "checkbox",
+								"value": "Безнал партнеров"
+							},
+							{
+								"type": "checkbox",
+								"value": "НТК"
+							},
+							{
+								"type": "checkbox",
+								"value": "Хаусдорф"
+							}
+						]
+					}
+				}
+			},
+			{
+				"elems": {
+					"titleTxt": "Источники",
+					"main": {
+						"mainData": [
+							{
+								"type": "radio",
+								"value": "Корзина"
+							},
+							{
+								"type": "radio",
+								"value": "Телефон",
+								"checked": true
+							}
+						]
+					}
+				}
+			},
+			{
+				"elems": {
+					"titleTxt": "Дата отгрузки заказа",
+					"main": {
+						"mainData": [
+							{
+								"type": "range-date"
+							}
+						]
+					}
+				}
+			},
+			{
+				"elems": {
+					"titleTxt": "Дата заказа",
+					"main": {
+						"mainData": [
+							{
+								"type": "range-date"
+							}
+						]
+					}
+				}
+			},
+			{
+				"elems": {
+					"titleTxt": "Регион",
+					"main": {
+						"modifs": [],
+						"mainData": [
+							{
+								"type": "select",
+								"value": [
+									{
+										"text": "Рыба текст 1"
+									},
+									{
+										"text": "Москва",
+										"selected": true
+									}
+								]
+							},
+							{
+								"type": "checkbox",
+								"value": "Отгрузка ТК"
+							}
+						]
+					}
+				}
+			},
+			{
+				"modifs": [
+					"wide"
+				],
+				"elems": {
+					"titleTxt": "Контроль",
+					"main": {
+						"mainData": [
+							{
+								"type": "entryField",
+								"titleText": "Непринятые заказы",
+								"macro": {
+									"name": "checkboxRadio",
+									"opts": {
+										"contentData": [
+											{
+												"text": "Да",
+												"checked": false
+											}
+										],
+										"inputType": "checkbox"
+									}
+								}
+							},
+							{
+								"type": "entryField",
+								"titleText": "Ошибка заполнения заказа",
+								"macro": {
+									"name": "select",
+									"opts": {
+										"contentData": [
+											{
+												"text": "Рыба текст 2"
+											},
+											{
+												"text": "Нет стоимости доставки",
+												"selected": true
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "entryField",
+								"titleText": "Темы",
+								"macro": {
+									"name": "select",
+									"opts": {
+										"contentData": [
+											{
+												"text": "Рыба текст 2"
+											},
+											{
+												"text": "Перенос заказа",
+												"selected": true
+											}
+										]
+									}
+								}
+							},
+							{
+								"type": "entryField",
+								"titleText": "Перенос даты доставки",
+								"macro": {
+									"name": "checkboxRadio",
+									"opts": {
+										"contentData": [
+											{
+												"text": "Да",
+												"checked": false
+											}
+										],
+										"inputType": "checkbox"
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
+}

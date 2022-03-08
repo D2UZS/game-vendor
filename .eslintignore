@@ -1,0 +1,7 @@
+# path/to/project/root/.eslintignore
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+
+templates/default/dist/*
+templates/default/src/js/*
+**/*.min.js
+gulp/*

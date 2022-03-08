@@ -1,0 +1,16 @@
+$fontsExtensions: "woff2", "woff";
+
+// **************************
+// *** SF UI Display ***
+// **************************
+$SFUIDisplayPath: "../fonts/SFUIDisplay/";
+$SFUIDisplayName: "SFUIDisplay";
+
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Thin", 100, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Light", 300, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Regular", 400, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Medium", 500, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Semibold", 600, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Bold", 700, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Heavy", 800, normal, $fontsExtensions);
+@include font-face($SFUIDisplayName, "#{$SFUIDisplayPath}/SFUIDisplay-Black", 900, normal, $fontsExtensions);

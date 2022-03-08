@@ -1,0 +1,17 @@
+// *** Базовые ***
+@import "base/reset.scss";
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/fonts.scss";
+@import "base/colors.scss";
+@import "base/typography.scss";
+@import "base/base.scss";
+
+// *** Плагины ***
+@import "plugins/plugins.scss";
+@import "plugins/users/**/*.scss";
+
+// *** Общие ***
+@import "../ajax/**/*.scss";
+
+// *** Компоненты ***

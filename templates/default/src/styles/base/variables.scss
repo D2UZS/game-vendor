@@ -1,0 +1,47 @@
+//! Закоментировал то, что пока не используется
+
+:root {
+    // *** Вертикальный ритм ***
+    --v-rhythm-1: 8px;
+
+    @for $i from 2 to 10 {
+        --v-rhythm-#{$i}: calc(var(--v-rhythm-1) * #{$i});
+    }
+
+    --font-main: "SFUIDisplay", sans-serif;
+
+    --radius-main: 3px;
+    --radius-small: 2px;
+
+    --opacity-press: 0.8;
+}
+
+// *** Transitions ***
+$transition-1: all 0.1s ease-in;
+$transition-2: all 0.2s ease-in;
+$transition-3: all 0.3s ease-in;
+
+// // *** Система слоев ***
+
+// $layer-behind: 1;
+// $layer-simple: 2;
+// $layer-front: 3;
+
+// $layer-highest: 15;
+// $layer-highest-behind: 14;
+
+// $layer-far-behind: -1;
+// $layer-for-bitrix: 1000;
+
+// // *** Радиусы для границ ***
+// $radius-simple: 3px;
+// $radius-small: 2px;
+
+// // *** Ширина контейнера для ПК ***
+// $safe-padding: 17px;
+// $width-container-pc: calc(1172px + (#{$safe-padding} * 2));
+
+// // *** Отступы для колонок ***
+// $gap-column: 28px;
+// $gap-row: 28px;
+// $gap: 28px;

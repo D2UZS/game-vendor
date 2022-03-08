@@ -1,0 +1,20 @@
+// *** Цветовая система ***
+
+$color-accent: #d0021b;
+$color-green: #31b64b;
+$color-grey: #d0d0d0;
+$color-dark: #1b253a;
+$color-main: #ffffff;
+$color-icons-grey: #a0a0a0;
+$color-blue: #3a84ff;
+$color-background: #fafafa;
+
+// *** Цветовая система hover ***
+$color-hover-main: darken(saturate($color-main, 1), 6);
+$color-hover-accent: lighten(desaturate($color-accent, 1), 6);
+$color-hover-dark: lighten(desaturate($color-dark, 1), 6);
+$color-hover-green: lighten(desaturate($color-green, 1), 6);
+$color-hover-blue: lighten(desaturate($color-blue, 1), 6);
+
+// *** Цветовая система border ***
+$color-border: $color-grey;

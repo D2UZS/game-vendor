@@ -1,0 +1,39 @@
+{
+    // Vs code сниппеты для проекта
+    "Vertical rhythm css variable": {
+        "prefix": "rhyt",
+        "body": [
+            "var(--v-rhythm-",
+        ]
+    },
+    "Mobile media query scss snippet": {
+        "prefix": "_",
+        "body": [
+            "@include _767 {",
+            "    ",
+            "}"
+        ]
+    },
+    "Add padding": {
+        "prefix": "pd",
+        "body": [
+            "padding: {",
+            "   top: $1;",
+            "   right: $2;",
+            "   bottom: $3;",
+            "   left: $4;",
+            "}"
+        ]
+    },
+    "Add margin": {
+        "prefix": "mg",
+        "body": [
+            "margin: {",
+            "   top: $1;",
+            "   right: $2;",
+            "   bottom: $3;",
+            "   left: $4;",
+            "}"
+        ]
+    }
+}

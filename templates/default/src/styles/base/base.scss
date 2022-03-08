@@ -1,0 +1,35 @@
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	color: $color-dark;
+	font-family: var(--font-main);
+	@include font(16px, 1.2);
+
+	background-color: $color-background;
+
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+
+	// Улучшаем рендеринг шрифтов на маках
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// *** Доступное сокрытие ***
+.visually-hidden {
+	position: absolute !important;
+	visibility: hidden !important;
+	pointer-events: none !important;
+	clip: rect(0 0 0 0) !important;
+	clip-path: inset(100%) !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	border: 0 !important;
+	text-indent: -9999px !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	user-select: none !important;
+}

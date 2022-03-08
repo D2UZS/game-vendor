@@ -1,0 +1,50 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"aaron-bond.better-comments",
+		"alefragnani.project-manager",
+		"bierner.lit-html",
+		"bierner.markdown-mermaid",
+		"Box-Of-Hats.bemhelper",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"CoenraadS.bracket-pair-colorizer",
+		"DavidAnson.vscode-markdownlint",
+		"eamodio.gitlens",
+		"eg2.vscode-npm-script",
+		"esbenp.prettier-vscode",
+		"eseom.nunjucks-template",
+		"exe-boss.vscode-nunjucks",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-complete-tag",
+		"formulahendry.auto-rename-tag",
+		"HookyQR.beautify",
+		"jock.svg",
+		"joloyonaha.scss-bem-support",
+		"luwenjiechn.nunjucks-vscode-snippets",
+		"mhutchie.git-graph",
+		"mohd-akram.vscode-html-format",
+		"mohsen1.prettify-json",
+		"mrmlnc.vscode-scss",
+		"okitavera.vscode-nunjucks-formatter",
+		"PKief.material-icon-theme",
+		"pnp.polacode",
+		"pranaygp.vscode-css-peek",
+		"ronnidc.nunjucks",
+		"sburg.vscode-javascript-booster",
+		"sibiraj-s.vscode-scss-formatter",
+		"syler.sass-indented",
+		"sysoev.language-stylus",
+		"urbantrout.refactor-css",
+		"vincaslt.highlight-matching-tag",
+		"vscode-icons-team.vscode-icons",
+		"wix.vscode-import-cost",
+		"xabikos.JavaScriptSnippets",
+		"ZainChen.json",
+		"Gruntfuggly.todo-tree"
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": []
+}
