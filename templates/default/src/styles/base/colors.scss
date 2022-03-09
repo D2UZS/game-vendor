@@ -1,20 +1,61 @@
-// *** Цветовая система ***
+:root {
+	//Base
+	--White: #ffffff;
 
-$color-accent: #d0021b;
-$color-green: #31b64b;
-$color-grey: #d0d0d0;
-$color-dark: #1b253a;
-$color-main: #ffffff;
-$color-icons-grey: #a0a0a0;
-$color-blue: #3a84ff;
-$color-background: #fafafa;
+	//Content
+	--Content-900: #101828;
+	--Content-800: #1d2939;
+	--Content-700: #344054;
+	--Content-600: #475467;
+	--Content-500: #667085;
+	--Content-400: #98a2b3;
+	--Content-300: #d0d5dd;
+	--Content-200: #eaecf0;
+	--Content-100: #f2f4f7;
+	--Content-50: #f9fafb;
+	--Content-25: #fcfcfd;
 
-// *** Цветовая система hover ***
-$color-hover-main: darken(saturate($color-main, 1), 6);
-$color-hover-accent: lighten(desaturate($color-accent, 1), 6);
-$color-hover-dark: lighten(desaturate($color-dark, 1), 6);
-$color-hover-green: lighten(desaturate($color-green, 1), 6);
-$color-hover-blue: lighten(desaturate($color-blue, 1), 6);
+	//Primary
+	--Primary-900: #42307d;
+	--Primary-800: #53389e;
+	--Primary-700: #6941c6;
+	--Primary-600: #7f56d9;
+	--Primary-500: #9e77ed;
+	--Primary-400: #b692f6;
+	--Primary-300: #d6bbfb;
+	--Primary-200: #e9d7fe;
+	--Primary-100: #f4ebff;
+	--Primary-50: #f9f5ff;
+	--Primary-25: #fcfaff;
 
-// *** Цветовая система border ***
-$color-border: $color-grey;
+	//Destructive
+	--Destructive-700: #b32318;
+	--Destructive-600: #d92d20;
+	--Destructive-200: #fecdc9;
+
+	//Yellow
+	--Yellow-300: #fec84b;
+
+	//Lime
+	--Lime-500: #669f2a;
+
+	//Red
+	--Red-600: #e31b53;
+	--Red-50: #fff1f3;
+
+	//Orange
+	--Orange-600: #dc6803;
+	--Orange-50: #fffaeb;
+
+	//Green
+	--Green-600: #039855;
+	--Green-50: #ecfdf3;
+
+	//Gray
+	--Gray-600: #57534e;
+	--Gray-50: #f7f7ea;
+
+	//Blue
+	--Blue-600: #0086c9;
+	--Blue-50: #f0f9ff;
+}

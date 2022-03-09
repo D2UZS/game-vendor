@@ -2,11 +2,11 @@ body {
 	width: 100%;
 	min-height: 100vh;
 
-	color: $color-dark;
+	// color: $color-dark;
 	font-family: var(--font-main);
-	@include font(16px, 1.2);
+	@extend .Body-M-Regular;
 
-	background-color: $color-background;
+	// background-color: $color-background;
 
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
@@ -16,7 +16,22 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// *** Доступное сокрытие ***
+.container {
+	--max-width: 1216px;
+
+	max-width: calc(var(--max-width) + (var(--safe-padding) * 2));
+	margin: 0 auto;
+
+	padding: 0 var(--safe-padding);
+
+	@include max-w__1279 {
+		--max-width: 976px;
+	}
+	@include max-w__1023 {
+		--max-width: 720px;
+	}
+}
+
 .visually-hidden {
 	position: absolute !important;
 	visibility: hidden !important;

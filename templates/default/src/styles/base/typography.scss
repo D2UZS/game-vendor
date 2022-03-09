@@ -1,24 +1,35 @@
-// Базовые классы типографики
-h1,
-.h1 {
-    @include font(24px, 32px, 300);
+// Display
+.Display-ExtraLarge {
+	@include font(52px, 56px, 600);
 }
-
-h2,
-.h2 {
-    @include font(16px, 24px, 600);
+.Display-Large {
+	@include font(40px, 44px, 600);
 }
-
-h3,
-.h3 {
+.Display-Medium {
+	@include font(32px, 38px, 600);
 }
-
-h4,
-.h4 {
+.Display-Small {
+	@include font(28px, 32px, 600);
 }
-
-.base-text {
+.Display-ExtraSmall {
+	@include font(24px, 28px, 600);
 }
-
-.descriptor {
+// Body
+.Body-L-Medium {
+	@include font(18px, 24px, 600);
+}
+.Body-M-Medium {
+	@include font(16px, 24px, 500);
+}
+.Body-M-Regular {
+	@include font(16px, 24px, 400);
+}
+.Body-S-Medium {
+	@include font(14px, 20px, 500);
+}
+.Body-S-Regular {
+	@include font(14px, 20px, 400);
+}
+.Body-XS-Regular {
+	@include font(12px, 18px, 400);
 }
