@@ -1,0 +1,54 @@
+.category-badge {
+	--category-badge-color: var(--Content-500);
+
+	padding: 2px 8px;
+	display: flex;
+	align-items: center;
+
+	@extend .Body-XS-Regular;
+	color: var(--category-badge-color);
+
+	background-color: var(--Base);
+	border-radius: 4px;
+
+	&::before {
+		content: "";
+
+		width: 6px;
+		height: 6px;
+		margin-right: 6px;
+
+		border-radius: 50%;
+		background-color: var(--category-badge-color);
+	}
+
+	&--shooter {
+		--category-badge-color: var(--Primary-600);
+		background-color: var(--Primary-50);
+	}
+
+	&--multiplayer-rpg {
+		--category-badge-color: var(--Red-600);
+		background-color: var(--Red-50);
+	}
+
+	&--action {
+		--category-badge-color: var(--Orange-600);
+		background-color: var(--Orange-50);
+	}
+
+	&--card-game {
+		--category-badge-color: var(--Green-600);
+		background-color: var(--Green-50);
+	}
+
+	&--strategy {
+		--category-badge-color: var(--Gray-600);
+		background-color: var(--Gray-50);
+	}
+
+	&--action-rpg {
+		--category-badge-color: var(--Blue-600);
+		background-color: var(--Blue-50);
+	}
+}

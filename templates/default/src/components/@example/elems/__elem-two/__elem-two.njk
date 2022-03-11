@@ -1,0 +1,12 @@
+{% set defaults = {} %}
+
+{% macro exampleElemTwo(opts = {
+    "additionalClasses": "",
+    "textContent": "",
+    "elems": {}
+}) %}
+
+    {% set opts = defaults | concatWithObject(opts) %}
+
+    <div class="example__elem-two {{ opts.additionalClasses }}"> {{ opts.textContent }} </div>
+{% endmacro %}

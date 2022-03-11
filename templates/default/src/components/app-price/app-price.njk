@@ -1,0 +1,32 @@
+{#
+	Готовые модификаторы:
+	modifs : [
+			"" 
+	];
+#}
+
+{% set defaults = {
+	"elems": {
+		"actualPrice": "649"
+	}
+} %}
+
+{% macro appPrice(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"elems": {
+		"oldPrice": "",
+		"actualPrice": ""
+	}
+}) %}
+
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	<div class="app-price {{ opts.modifs | generateModifs("app-price") -}} {{ opts.additionalClasses -}}">
+		{% if opts.elems.oldPrice %}
+			<span class="app-price__old">${{ opts.elems.oldPrice }}</span>
+		{% endif %}
+		<span class="app-price__actual">${{ opts.elems.actualPrice }}</span>
+	</div>
+
+{% endmacro %}

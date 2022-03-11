@@ -1,0 +1,24 @@
+{#
+	Готовые модификаторы:
+	modifs : [
+			"" 
+	];
+#}
+
+{% set defaults = {
+	"text": "-5%"
+} %}
+
+{% macro saleBadge(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"text": ""
+}) %}
+
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	<div class="sale-badge {{ opts.modifs | generateModifs("sale-badge") -}} {{ opts.additionalClasses -}}">
+		{{- opts.text -}}
+	</div>
+
+{% endmacro %}

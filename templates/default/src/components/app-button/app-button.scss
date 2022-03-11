@@ -1,0 +1,91 @@
+.app-button {
+	--color-app-button: var(--Base);
+
+	position: relative;
+
+	max-width: max-content;
+	padding: 9px 17px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	@extend .Body-M-Medium;
+	color: var(--color-app-button);
+
+	border-radius: 8px;
+	--color-background-border: var(--Primary-600);
+	border: 1px solid var(--color-background-border);
+	background-color: var(--color-background-border);
+	transition: var(--transition-1);
+
+	&:not(.app-button--loading) {
+		@include hover {
+			--color-background-border: var(--Primary-700);
+		}
+
+		&:active {
+			opacity: var(--press-opacity);
+		}
+	}
+
+	&__icon,
+	&__loading {
+		fill: var(--color-app-button);
+	}
+
+	&__loading {
+		display: none;
+	}
+
+	&--medium {
+		padding: 9px 17px;
+		@extend .Body-S-Medium;
+	}
+
+	&--small {
+		padding: 7px 13px;
+		@extend .Body-S-Medium;
+	}
+
+	&--only-icon {
+		padding: 11px;
+	}
+
+	&--loading {
+		cursor: default;
+
+		.app-button__loading {
+			display: block;
+		}
+
+		.app-button__icon {
+			display: none;
+		}
+	}
+
+	&--only-text.app-button--loading {
+		color: transparent;
+
+		.app-button__loading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&--tertiary {
+		--color-app-button: var(--Content-900);
+
+		border-color: var(--Content-300);
+		background-color: var(--Base);
+
+		&:not(.app-button--loading) {
+			@include hover {
+				--color-app-button: var(--Primary-600);
+
+				background-color: var(--Content-50);
+			}
+		}
+	}
+}

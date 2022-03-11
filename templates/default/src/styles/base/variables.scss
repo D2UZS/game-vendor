@@ -4,6 +4,8 @@
 	--transition-1: all 0.1s;
 	--transition-2: all 0.2s;
 
+	--press-opacity: 0.8;
+
 	--safe-padding: 24px;
 	@include max-w__767 {
 		--safe-padding: 20px;

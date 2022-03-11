@@ -22,13 +22,8 @@ h1 {
     margin-bottom: 30px;
 }
 
-.section h2,
-.section h3 {
+.section h2 {
     margin-bottom: 10px;
-}
-
-.section h3:not(:first-of-type) {
-    margin-top: 20px;
 }
 
 .section__content {
@@ -43,5 +38,10 @@ h1 {
 .section__content--col {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+}
+
+.section__content-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }

@@ -1,0 +1,23 @@
+{#
+	Готовые модификаторы:
+	modifs : [
+			"" 
+	];
+#}
+
+{% set defaults = {} %}
+
+{% macro spinnerIcon(opts = {
+	"additionalClasses": "",
+	"modifs": []
+}) %}
+
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	<span class="spinner-icon {{ opts.modifs | generateModifs("sale-badge") -}} {{ opts.additionalClasses -}}">
+		<svg class="spinner-icon__loading" width="20px" height="20px">
+			<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+		</svg>
+	</span>
+
+{% endmacro %}

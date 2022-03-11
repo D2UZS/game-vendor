@@ -2,11 +2,11 @@ body {
 	width: 100%;
 	min-height: 100vh;
 
-	// color: $color-dark;
+	color: var(--Content-500);
 	font-family: var(--font-main);
 	@extend .Body-M-Regular;
 
-	// background-color: $color-background;
+	background-color: var(--Content-50);
 
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;

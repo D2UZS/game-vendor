@@ -1,0 +1,15 @@
+.app-price {
+	@include font(16px, 24px, 600);
+	color: var(--Content-900);
+
+	&__old {
+		margin-right: 8px;
+
+		font-weight: 500;
+		color: var(--Content-300);
+
+		text-decoration: line-through;
+	}
+	&__actual {
+	}
+}

@@ -1,0 +1,68 @@
+{% from "spinner-icon/spinner-icon.njk" import spinnerIcon %}
+
+{#
+	Готовые модификаторы:
+	modifs : [
+			"medium", "small" - уменьшает паддинги и размер шрифта
+			"only-icon" - изменяет паддинги у кнопки, у которой только иконка
+			"tertiary" - меняет цвета кнопки
+	];
+#}
+
+{% set defaults = {
+	"tagName": "button"
+} %}
+
+{# Варианты "content":
+"onlyText" - только текст,
+"beforeIcon" - текст и иконка слева,
+"afterIcon" - текст и иконка справа,
+"onlyIcon" - только иконка #}
+
+{% macro appButton(opts = {
+	"tagName": "",
+	"additionalClasses": "",
+	"modifs": [],
+	"content": "",
+	"text": "",
+	"isLoading": false
+}) %}
+
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	<{{ opts.tagName }}
+	class="app-button {{ opts.modifs | generateModifs("app-button") -}}
+	{%- if opts.content === "onlyIcon" -%} app-button--only-icon {%- endif -%}
+	{%- if opts.content === "onlyText" -%} app-button--only-text {%- endif -%}
+	{% if opts.isLoading %} app-button--loading {%- endif -%}
+	{{ opts.additionalClasses -}}"
+	{% if opts.tagName === 'a' %}href="#"{% endif %}
+	>
+		{% if opts.content === "onlyText" %}
+			{{ opts.text }}
+			{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
+		{% elif opts.content === "beforeIcon" or opts.content === "afterIcon" %}
+			{% if opts.content === "beforeIcon" %}
+				<svg class="app-button__icon" width="20px" height="20px">
+					<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+				</svg>
+				{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
+			{% endif %}
+			{{ opts.text }}
+			{% if opts.content === "afterIcon" %}
+				<svg class="app-button__icon" width="20px" height="20px">
+					<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+				</svg>
+				{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
+			{% endif %}
+		{% elif opts.content === "onlyIcon" %}
+			<svg class="app-button__icon" width="20px" height="20px">
+				<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+			</svg>
+			{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
+		{% else %}
+			Error: content
+		{% endif %}
+	</{{ opts.tagName }}>
+
+{% endmacro %}
