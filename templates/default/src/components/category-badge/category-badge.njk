@@ -1,22 +1,21 @@
-{#
-	Готовые модификаторы:
-	modifs : [
-			"shooter", "multiplayer-rpg", "action", "card-game", "strategy", "action-rpg" - меняют цвет текста и фона
-	];
-#}
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
 
+{# Значения по умолчанию #}
 {% set defaults = {
 	"text": "text default"
 } %}
 
+{# Макрос компонента #}
 {% macro categoryBadge(opts = {
 	"additionalClasses": "",
 	"modifs": [],
 	"text": ""
 }) %}
 
+	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
 
+	{# Код компонента #}
 	<div class="category-badge {{ opts.modifs | generateModifs("category-badge") -}} {{ opts.additionalClasses -}}">
 		{{ opts.text }}
 	</div>

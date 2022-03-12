@@ -10,21 +10,18 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": [],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["disabled"],
-					"content": "onlyText",
 					"text": "Disabled"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["loading"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 		</div>
@@ -35,14 +32,12 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["medium"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["medium", "loading"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 		</div>
@@ -53,14 +48,12 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["small"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["small", "loading"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 		</div>
@@ -71,7 +64,6 @@
 					"tagName": "a",
 					"additionalClasses": "",
 					"modifs": [],
-					"content": "onlyText",
 					"text": "Link",
 					"linkPath": "#"
 				}) }}
@@ -79,8 +71,8 @@
 					"tagName": "a",
 					"additionalClasses": "",
 					"modifs": ["loading"],
-					"content": "onlyText",
-					"text": "Link"
+					"text": "Link",
+					"linkPath": "#"
 				}) }}
 		</div>
 		{# Before icon #}
@@ -90,15 +82,15 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": [],
-					"content": "beforeIcon",
-					"text": "Button"
+					"text": "Button",
+					"iconName": "plus-circle"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["loading"],
-					"content": "beforeIcon",
-					"text": "Button"
+					"text": "Button",
+					"iconName": "plus-circle"
 				}) }}
 		</div>
 		{# After icon #}
@@ -107,16 +99,16 @@
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
-					"modifs": [],
-					"content": "afterIcon",
-					"text": "Button"
+					"modifs": ["icon-after-txt"],
+					"text": "Button",
+					"iconName": "plus-circle"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
-					"modifs": ["loading"],
-					"content": "afterIcon",
-					"text": "Button"
+					"modifs": ["icon-after-txt", "loading"],
+					"text": "Button",
+					"iconName": "plus-circle"
 				}) }}
 		</div>
 		{# Only icon #}
@@ -126,13 +118,13 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": [],
-					"content": "onlyIcon"
+					"iconName": "plus-circle"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["loading"],
-					"content": "onlyIcon"
+					"iconName": "plus-circle"
 				}) }}
 		</div>
 		{# Secondary #}
@@ -142,21 +134,18 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "disabled"],
-					"content": "onlyText",
 					"text": "Disabled"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "loading"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 		</div>
@@ -167,21 +156,18 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["tertiary"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["tertiary", "disabled"],
-					"content": "onlyText",
 					"text": "Disabled"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["tertiary", "loading"],
-					"content": "onlyText",
 					"text": "Button"
 				}) }}
 		</div>
@@ -192,21 +178,18 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "disabled"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "loading"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 		</div>
@@ -217,21 +200,18 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "disabled"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "loading"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 		</div>
@@ -242,21 +222,18 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "medium"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "medium", "disabled"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "medium", "loading"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 		</div>
@@ -267,34 +244,19 @@
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "small"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "small", "disabled"],
-					"content": "onlyIcon",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "small", "loading"],
-					"content": "onlyIcon",
 					"iconName": "cross"
-				}) }}
-		</div>
-		{# Error: content #}
-		<div class="section__content-inner">
-			<h3>Error: content</h3>
-			{{ appButton({
-					"tagName": "button",
-					"additionalClasses": "",
-					"content": "",
-					"modifs": [],
-					"onlyIcon": true,
-					"isSpinner": true
 				}) }}
 		</div>
 		{# Tag #}
@@ -303,16 +265,14 @@
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
-					"modifs": ["medium", "tag"],
-					"content": "afterIcon",
+					"modifs": ["medium", "tag", "icon-after-txt"],
 					"text": "Button",
 					"iconName": "cross"
 				}) }}
 			{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
-					"modifs": ["medium", "tag", "loading"],
-					"content": "afterIcon",
+					"modifs": ["medium", "tag", "loading", "icon-after-txt"],
 					"text": "Button",
 					"iconName": "cross"
 				}) }}

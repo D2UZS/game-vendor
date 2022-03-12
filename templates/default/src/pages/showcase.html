@@ -1,122 +1,18 @@
 {% extends "../components/@templates/02 - template-technical.njk" %}
 
-{% from "sale-badge/sale-badge.njk" import saleBadge %}
-{% from "app-price/app-price.njk" import appPrice %}
-{% from "spinner-icon/spinner-icon.njk" import spinnerIcon %}
-
 {% block additionalMeta %}
 	<title>Витрина компонентов</title>
 {% endblock %}
 
 {% block content %}
 	{# category-badge #}
-	<section class="section">
-		<h2>category-badge</h2>
-		<div class="section__content section__content--col">
-			{% include "../components/category-badge/variations/category-badge.html" %}
-			{% include "../components/category-badge/variations/category-badge--shooter.html" %}
-			{% include "../components/category-badge/variations/category-badge--multiplayer-rpg.html" %}
-			{% include "../components/category-badge/variations/category-badge--action.html" %}
-			{% include "../components/category-badge/variations/category-badge--card-game.html" %}
-			{% include "../components/category-badge/variations/category-badge--strategy.html" %}
-			{% include "../components/category-badge/variations/category-badge--action-rpg.html" %}
-		</div>
-	</section>
+	{% include "../components/@showcase/category-badge.html" %}
 
-	{# app-price sale-badge #}
-	<section class="section">
-		<h2>app-price / sale-badge</h2>
-		<div class="section__content section__content--col">
-			{# appPrice #}
-			{{ appPrice({
-				"additionalClasses": "",
-				"modifs": [],
-				"elems": {
-					"oldPrice": "1,299",
-					"actualPrice": "649"
-				}
-			}) }}
-
-			{# sale-badge #}
-			{{ saleBadge({
-				"additionalClasses": "",
-				"modifs": [],
-				"text": "-5%"
-			}) }}
-		</div>
-	</section>
+	{# app-price and sale-badge #}
+	{% include "../components/@showcase/app-price-and-sale-badge.html" %}
 
 	{# icons #}
-	<section class="section">
-		<h2>icons</h2>
-		<div class="section__content section__content--col">
-			{# arrow-down #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#arrow-down"></use>
-			</svg>
-			{# arrow-left #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#arrow-left"></use>
-			</svg>
-			{# arrow-right #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#arrow-right"></use>
-			</svg>
-			{# browse #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#browse"></use>
-			</svg>
-			{# cart #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#cart"></use>
-			</svg>
-			{# cross #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
-			</svg>
-			{# filter #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#filter"></use>
-			</svg>
-			{# home #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#home"></use>
-			</svg>
-			{# minus-circle #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#minus-circle"></use>
-			</svg>
-			{# plus-circle #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
-			</svg>
-			{# pin #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#pin"></use>
-			</svg>
-			{# user #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#user"></use>
-			</svg>
-			{# search #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#search"></use>
-			</svg>
-			{# cross-circle #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#cross-circle"></use>
-			</svg>
-			{# spinner #}
-			<svg width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
-			</svg>
-			{# spinner-icon #}
-			{{ spinnerIcon({
-					"additionalClasses": "",
-					"modifs": []
-				}) }}
-		</div>
-	</section>
+	{% include "../components/@showcase/icons.html" %}
 
 	{# app-button #}
 	{% include "../components/@showcase/app-button.html" %}

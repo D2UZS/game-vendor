@@ -3,16 +3,10 @@
 {# Подключение компонентов, которые использует этот компонент #}
 {% from "spinner-icon/spinner-icon.njk" import spinnerIcon %}
 
-{# Подключение элементов этого компонента #}
-{% from "./elems/__icons/__icons.njk" import appButtonIcons %}
-
 {# Значения по умолчанию #}
 {% set defaults = {
 	"tagName": "button",
-	"linkPath": "#",
-	"content": "onlyText",
-	"text": "button",
-	"iconName": "plus-circle"
+	"linkPath": "#"
 } %}
 
 {# Макрос компонента #}
@@ -20,10 +14,9 @@
 	"tagName": "",
 	"additionalClasses": "",
 	"modifs": [],
-	"content": "",
 	"text": "",
-	"linkPath": "",
-	"iconName": ""
+	"iconName": "",
+	"linkPath": ""
 }) %}
 
 	{# Подключение значений по умолчанию #}
@@ -32,36 +25,20 @@
 	{# Код компонента #}
 	<{{ opts.tagName }}
 	class="app-button {{ opts.modifs | generateModifs("app-button") -}}
-	{%- if opts.content === "onlyIcon" -%} app-button--only-icon {%- endif -%}
-	{%- if opts.content === "onlyText" -%} app-button--only-text {%- endif -%}
+	{%- if opts.iconName and not opts.text -%} app-button--only-icon {%- endif -%}
+	{%- if  opts.text and not opts.iconName -%} app-button--only-text {%- endif -%}
 	{{ opts.additionalClasses -}}"
 	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
-		{% if opts.content === "onlyText" %}
-			{{ opts.text }}
-			{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
-		{% elif opts.content === "beforeIcon" or opts.content === "afterIcon" %}
-			{% if opts.content === "beforeIcon" %}
-				<svg class="app-button__icon" width="20px" height="20px">
-					<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
-				</svg>
-				{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
-			{% endif %}
-			{{ opts.text }}
-			{% if opts.content === "afterIcon" %}
-				<svg class="app-button__icon" width="20px" height="20px">
-					<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
-				</svg>
-				{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
-			{% endif %}
-		{% elif opts.content === "onlyIcon" %}
+		{% if opts.iconName %}
 			<svg class="app-button__icon" width="20px" height="20px">
 				<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
 			</svg>
-			{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
-		{% else %}
-			Error: content
 		{% endif %}
+
+		{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
+
+		{{ opts.text }}
 	</{{ opts.tagName }}>
 
 {% endmacro %}

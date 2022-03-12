@@ -43,6 +43,11 @@
 		display: none;
 	}
 
+	// Модификатор меняет местами иконку и текст
+	&--icon-after-txt {
+		flex-direction: row-reverse;
+	}
+
 	// Модификаторы размера кнопки
 	&--medium {
 		padding: 9px 17px;

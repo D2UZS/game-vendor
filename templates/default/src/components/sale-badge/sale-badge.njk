@@ -1,22 +1,21 @@
-{#
-	Готовые модификаторы:
-	modifs : [
-			"" 
-	];
-#}
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
 
+{# Значения по умолчанию #}
 {% set defaults = {
 	"text": "-5%"
 } %}
 
+{# Макрос компонента #}
 {% macro saleBadge(opts = {
 	"additionalClasses": "",
 	"modifs": [],
 	"text": ""
 }) %}
 
+	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
 
+	{# Код компонента #}
 	<div class="sale-badge {{ opts.modifs | generateModifs("sale-badge") -}} {{ opts.additionalClasses -}}">
 		{{- opts.text -}}
 	</div>
