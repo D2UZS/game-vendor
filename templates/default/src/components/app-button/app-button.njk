@@ -1,42 +1,41 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
 {% from "spinner-icon/spinner-icon.njk" import spinnerIcon %}
 
-{#
-	Готовые модификаторы:
-	modifs : [
-			"medium", "small" - уменьшает паддинги и размер шрифта
-			"only-icon" - изменяет паддинги у кнопки, у которой только иконка
-			"tertiary" - меняет цвета кнопки
-	];
-#}
+{# Подключение элементов этого компонента #}
+{% from "./elems/__icons/__icons.njk" import appButtonIcons %}
 
+{# Значения по умолчанию #}
 {% set defaults = {
-	"tagName": "button"
+	"tagName": "button",
+	"linkPath": "#",
+	"content": "onlyText",
+	"text": "button",
+	"iconName": "plus-circle"
 } %}
 
-{# Варианты "content":
-"onlyText" - только текст,
-"beforeIcon" - текст и иконка слева,
-"afterIcon" - текст и иконка справа,
-"onlyIcon" - только иконка #}
-
+{# Макрос компонента #}
 {% macro appButton(opts = {
 	"tagName": "",
 	"additionalClasses": "",
 	"modifs": [],
 	"content": "",
 	"text": "",
-	"isLoading": false
+	"linkPath": "",
+	"iconName": ""
 }) %}
 
+	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
 
+	{# Код компонента #}
 	<{{ opts.tagName }}
 	class="app-button {{ opts.modifs | generateModifs("app-button") -}}
 	{%- if opts.content === "onlyIcon" -%} app-button--only-icon {%- endif -%}
 	{%- if opts.content === "onlyText" -%} app-button--only-text {%- endif -%}
-	{% if opts.isLoading %} app-button--loading {%- endif -%}
 	{{ opts.additionalClasses -}}"
-	{% if opts.tagName === 'a' %}href="#"{% endif %}
+	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
 		{% if opts.content === "onlyText" %}
 			{{ opts.text }}
@@ -44,20 +43,20 @@
 		{% elif opts.content === "beforeIcon" or opts.content === "afterIcon" %}
 			{% if opts.content === "beforeIcon" %}
 				<svg class="app-button__icon" width="20px" height="20px">
-					<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+					<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
 				</svg>
 				{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
 			{% endif %}
 			{{ opts.text }}
 			{% if opts.content === "afterIcon" %}
 				<svg class="app-button__icon" width="20px" height="20px">
-					<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+					<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
 				</svg>
 				{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
 			{% endif %}
 		{% elif opts.content === "onlyIcon" %}
 			<svg class="app-button__icon" width="20px" height="20px">
-				<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+				<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
 			</svg>
 			{{ spinnerIcon({"additionalClasses": "app-button__loading"}) }}
 		{% else %}

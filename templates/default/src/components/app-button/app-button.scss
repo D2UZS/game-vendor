@@ -1,5 +1,5 @@
 .app-button {
-	--color-app-button: var(--Base);
+	--color-fill: var(--Base);
 
 	position: relative;
 
@@ -10,19 +10,25 @@
 	gap: 8px;
 
 	@extend .Body-M-Medium;
-	color: var(--color-app-button);
+	color: var(--color-fill);
 
 	border-radius: 8px;
-	--color-background-border: var(--Primary-600);
-	border: 1px solid var(--color-background-border);
-	background-color: var(--color-background-border);
+	--background-color-border-color: var(--Primary-600);
+	border: 1px solid var(--background-color-border-color);
+	background-color: var(--background-color-border-color);
 	transition: var(--transition-1);
 
-	&:not(.app-button--loading) {
-		@include hover {
-			--color-background-border: var(--Primary-700);
-		}
+	&--disabled {
+		--background-color-border-color: var(--Primary-200);
+	}
 
+	&:not(.app-button--loading):not(.app-button--disabled):not(.app-button--secondary):not(.app-button--tertiary):not(.app-button--tag):not(.app-button--red) {
+		@include hover {
+			--background-color-border-color: var(--Primary-700);
+		}
+	}
+
+	&:not(.app-button--loading):not(.app-button--disabled) {
 		&:active {
 			opacity: var(--press-opacity);
 		}
@@ -30,13 +36,14 @@
 
 	&__icon,
 	&__loading {
-		fill: var(--color-app-button);
+		fill: var(--color-fill);
 	}
 
 	&__loading {
 		display: none;
 	}
 
+	// Модификаторы размера кнопки
 	&--medium {
 		padding: 9px 17px;
 		@extend .Body-S-Medium;
@@ -47,13 +54,26 @@
 		@extend .Body-S-Medium;
 	}
 
+	// Модификатор кнопки без текста
 	&--only-icon {
 		padding: 11px;
+
+		&.app-button--medium {
+			padding: 9px;
+		}
+
+		&.app-button--small {
+			padding: 7px;
+		}
+	}
+
+	// Модификатор состояния загрузки и отключения
+	&--loading,
+	&--disabled {
+		cursor: default;
 	}
 
 	&--loading {
-		cursor: default;
-
 		.app-button__loading {
 			display: block;
 		}
@@ -74,18 +94,72 @@
 		}
 	}
 
-	&--tertiary {
-		--color-app-button: var(--Content-900);
+	// Модификатор кнопки с бордером второй
+	&--secondary {
+		--color-fill: var(--Content-900);
 
 		border-color: var(--Content-300);
 		background-color: var(--Base);
 
-		&:not(.app-button--loading) {
+		&:not(.app-button--loading):not(.app-button--disabled) {
 			@include hover {
-				--color-app-button: var(--Primary-600);
+				background-color: var(--Content-50);
+			}
+		}
+
+		&.app-button--disabled {
+			--color-fill: var(--Content-300);
+
+			border-color: var(--Content-200);
+		}
+	}
+
+	// Модификатор кнопки с бордером третий
+	&--tertiary {
+		--color-fill: var(--Content-900);
+
+		border-color: var(--Content-300);
+		background-color: var(--Base);
+
+		&:not(.app-button--loading):not(.app-button--disabled) {
+			@include hover {
+				--color-fill: var(--Primary-600);
 
 				background-color: var(--Content-50);
 			}
+		}
+
+		&.app-button--disabled {
+			--color-fill: var(--Content-300);
+
+			border-color: var(--Content-200);
+		}
+	}
+
+	// Модификатор кнопки тега
+	&--tag {
+		--color-fill: var(--Primary-600);
+		--background-color-border-color: var(--Primary-100);
+
+		&:not(.app-button--loading) {
+			@include hover {
+				background-color: var(--Primary-200);
+			}
+		}
+	}
+
+	// Модификатор кнопки red
+	&--red {
+		--background-color-border-color: var(--Destructive-600);
+
+		&:not(.app-button--loading):not(.app-button--disabled) {
+			@include hover {
+				--background-color-border-color: var(--Destructive-700);
+			}
+		}
+
+		&.app-button--disabled {
+			--background-color-border-color: var(--Destructive-200);
 		}
 	}
 }

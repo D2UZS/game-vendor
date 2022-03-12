@@ -1,0 +1,321 @@
+{% from "app-button/app-button.njk" import appButton %}
+
+<section class="section">
+	<h2>app-button</h2>
+	<div class="section__content section__content--col">
+		{# Primary #}
+		<div class="section__content-inner">
+			<h3>Primary</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": [],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["disabled"],
+					"content": "onlyText",
+					"text": "Disabled"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["loading"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+		</div>
+		{# Medium #}
+		<div class="section__content-inner">
+			<h3>Medium</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["medium"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["medium", "loading"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+		</div>
+		{# Small #}
+		<div class="section__content-inner">
+			<h3>Small</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["small"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["small", "loading"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+		</div>
+		{# As link #}
+		<div class="section__content-inner">
+			<h3>As link</h3>
+			{{ appButton({
+					"tagName": "a",
+					"additionalClasses": "",
+					"modifs": [],
+					"content": "onlyText",
+					"text": "Link",
+					"linkPath": "#"
+				}) }}
+			{{ appButton({
+					"tagName": "a",
+					"additionalClasses": "",
+					"modifs": ["loading"],
+					"content": "onlyText",
+					"text": "Link"
+				}) }}
+		</div>
+		{# Before icon #}
+		<div class="section__content-inner">
+			<h3>Before icon</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": [],
+					"content": "beforeIcon",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["loading"],
+					"content": "beforeIcon",
+					"text": "Button"
+				}) }}
+		</div>
+		{# After icon #}
+		<div class="section__content-inner">
+			<h3>After icon</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": [],
+					"content": "afterIcon",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["loading"],
+					"content": "afterIcon",
+					"text": "Button"
+				}) }}
+		</div>
+		{# Only icon #}
+		<div class="section__content-inner">
+			<h3>Only icon</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": [],
+					"content": "onlyIcon"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["loading"],
+					"content": "onlyIcon"
+				}) }}
+		</div>
+		{# Secondary #}
+		<div class="section__content-inner">
+			<h3>Secondary</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["secondary"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["secondary", "disabled"],
+					"content": "onlyText",
+					"text": "Disabled"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["secondary", "loading"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+		</div>
+		{# Tertiary #}
+		<div class="section__content-inner">
+			<h3>Tertiary</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["tertiary"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["tertiary", "disabled"],
+					"content": "onlyText",
+					"text": "Disabled"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["tertiary", "loading"],
+					"content": "onlyText",
+					"text": "Button"
+				}) }}
+		</div>
+		{# X-red #}
+		<div class="section__content-inner">
+			<h3>X-red</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "disabled"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "loading"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+		</div>
+		{# X-secondary #}
+		<div class="section__content-inner">
+			<h3>X-secondary</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["secondary"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["secondary", "disabled"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["secondary", "loading"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+		</div>
+		{# X-Medium #}
+		<div class="section__content-inner">
+			<h3>X-Medium</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "medium"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "medium", "disabled"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "medium", "loading"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+		</div>
+		{# X-Small #}
+		<div class="section__content-inner">
+			<h3>X-Small</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "small"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "small", "disabled"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["red", "small", "loading"],
+					"content": "onlyIcon",
+					"iconName": "cross"
+				}) }}
+		</div>
+		{# Error: content #}
+		<div class="section__content-inner">
+			<h3>Error: content</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"content": "",
+					"modifs": [],
+					"onlyIcon": true,
+					"isSpinner": true
+				}) }}
+		</div>
+		{# Tag #}
+		<div class="section__content-inner">
+			<h3>Tag</h3>
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["medium", "tag"],
+					"content": "afterIcon",
+					"text": "Button",
+					"iconName": "cross"
+				}) }}
+			{{ appButton({
+					"tagName": "button",
+					"additionalClasses": "",
+					"modifs": ["medium", "tag", "loading"],
+					"content": "afterIcon",
+					"text": "Button",
+					"iconName": "cross"
+				}) }}
+		</div>
+	</div>
+</section>
