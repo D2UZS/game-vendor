@@ -1,0 +1,45 @@
+.app-link {
+	max-width: max-content;
+
+	@extend .Body-M-Medium;
+	color: var(--Content-100);
+
+	transition: var(--transition-1);
+
+	&:not(.app-link--disabled) {
+		@include hover {
+			color: var(--Content-400);
+		}
+
+		&:active {
+			opacity: var(--press-opacity);
+		}
+	}
+
+	// Модификатор заблокированного состояния
+	&--disabled {
+		color: var(--Content-600);
+
+		cursor: default;
+	}
+
+	// Модификатор размера шрифта
+	&--medium {
+		@extend .Body-S-Medium;
+	}
+
+	// Модификатор цвета
+	&--dark-grey {
+		color: var(--Content-500);
+
+		&:not(.app-link--disabled) {
+			@include hover {
+				color: var(--Primary-600);
+			}
+		}
+
+		&.app-link--disabled {
+			color: var(--Content-300);
+		}
+	}
+}

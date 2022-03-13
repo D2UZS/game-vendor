@@ -1,0 +1,35 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "spinner-icon/spinner-icon.njk" import spinnerIcon %}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"tagName": "a",
+	"linkPath": "#",
+	"text": "Link"
+} %}
+
+{# Макрос компонента #}
+{% macro appLink(opts = {
+	"tagName": "",
+	"linkPath": "#",
+	"additionalClasses": "",
+	"modifs": [],
+	"text": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<{{ opts.tagName }}
+	class="app-link {{ opts.modifs | generateModifs("app-link") -}} {{ opts.additionalClasses -}}"
+	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
+	>
+
+		{{ opts.text }}
+
+	</{{ opts.tagName }}>
+
+{% endmacro %}

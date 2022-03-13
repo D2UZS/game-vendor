@@ -61,19 +61,26 @@
 		<div class="section__content-inner">
 			<h3>As link</h3>
 			{{ appButton({
-					"tagName": "a",
-					"additionalClasses": "",
-					"modifs": [],
-					"text": "Link",
-					"linkPath": "#"
-				}) }}
+				"tagName": "a",
+				"additionalClasses": "",
+				"modifs": [],
+				"text": "Link",
+				"linkPath": "#"
+			}) }}
 			{{ appButton({
-					"tagName": "a",
-					"additionalClasses": "",
-					"modifs": ["loading"],
-					"text": "Link",
-					"linkPath": "#"
-				}) }}
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["disabled"],
+				"text": "Disabled"
+			}) }}
+			{{ appButton({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["loading"],
+				"text": "Link"
+			}) }}
 		</div>
 		{# Before icon #}
 		<div class="section__content-inner">

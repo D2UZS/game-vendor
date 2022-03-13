@@ -1,0 +1,95 @@
+{% from "app-link/app-link.njk" import appLink %}
+
+<section class="section">
+	<h2>app-link</h2>
+	<div class="section__content section__content--col">
+		{# Primary #}
+		<div class="section__content-inner">
+			<h3>Primary</h3>
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": [],
+				"text": "Link"
+			}) }}
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["disabled"],
+				"text": "Disabled"
+			}) }}
+		</div>
+		{# As button #}
+		<div class="section__content-inner">
+			<h3>As button</h3>
+			{{ appLink({
+				"tagName": "button",
+				"additionalClasses": "",
+				"modifs": [],
+				"text": "Button"
+			}) }}
+			{{ appLink({
+				"tagName": "button",
+				"additionalClasses": "",
+				"modifs": ["disabled"],
+				"text": "Disabled"
+			}) }}
+		</div>
+		{# Medium #}
+		<div class="section__content-inner">
+			<h3>Medium</h3>
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["medium"],
+				"text": "Link"
+			}) }}
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["medium", "disabled"],
+				"text": "Disabled"
+			}) }}
+		</div>
+		{# Dark grey #}
+		<div class="section__content-inner">
+			<h3>Dark grey</h3>
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["dark-grey"],
+				"text": "Link"
+			}) }}
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["dark-grey", "disabled"],
+				"text": "Disabled"
+			}) }}
+		</div>
+		{# Dark grey / Medium #}
+		<div class="section__content-inner">
+			<h3>Dark grey / Medium</h3>
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["dark-grey", "medium"],
+				"text": "Link"
+			}) }}
+			{{ appLink({
+				"tagName": "a",
+				"linkPath": "#",
+				"additionalClasses": "",
+				"modifs": ["dark-grey", "medium", "disabled"],
+				"text": "Disabled"
+			}) }}
+		</div>
+	</div>
+</section>
