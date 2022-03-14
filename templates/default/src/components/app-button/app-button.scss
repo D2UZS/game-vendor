@@ -1,12 +1,14 @@
 .app-button {
 	--color-fill: var(--Base);
+	--border-size: 1px;
 
 	position: relative;
 
 	max-width: max-content;
-	padding: 9px 17px;
+	padding: calc(10px - var(--border-size)) calc(18px - var(--border-size));
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 8px;
 
 	@extend .Body-M-Medium;
@@ -14,7 +16,7 @@
 
 	border-radius: 8px;
 	--background-color-border-color: var(--Primary-600);
-	border: 1px solid var(--background-color-border-color);
+	border: var(--border-size) solid var(--background-color-border-color);
 	background-color: var(--background-color-border-color);
 
 	&--disabled {
@@ -49,25 +51,24 @@
 
 	// Модификаторы размера кнопки
 	&--medium {
-		padding: 9px 17px;
 		@extend .Body-S-Medium;
 	}
 
 	&--small {
-		padding: 7px 13px;
+		padding: calc(8px - var(--border-size)) calc(14px - var(--border-size));
 		@extend .Body-S-Medium;
 	}
 
 	// Модификатор кнопки без текста
 	&--only-icon {
-		padding: 11px;
+		padding: calc(12px - var(--border-size));
 
 		&.app-button--medium {
-			padding: 9px;
+			padding: calc(10px - var(--border-size));
 		}
 
 		&.app-button--small {
-			padding: 7px;
+			padding: calc(8px - var(--border-size));
 		}
 	}
 

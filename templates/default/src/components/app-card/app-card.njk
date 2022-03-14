@@ -17,6 +17,9 @@
 			"imageType": "jpg",
 			"hasMobileVersion": true
 		},
+		"btnDelete": {
+			"modifs": ["red", "medium"]
+		},
 		"categoryBadge": {
 			"modifs": ['shooter'],
 			"text": "Shooter"
@@ -47,6 +50,9 @@
 			"imageName": "",
 			"imageType": "",
 			"hasMobileVersion": false
+		},
+		"btnDelete": {
+			"modifs": []
 		},
 		"categoryBadge": {
 			"modifs": [],
@@ -84,7 +90,7 @@
 			{{ appButton({
 				"tagName": "button",
 				"additionalClasses": "app-card__btn-delete",
-				"modifs": ["red", "small"],
+				"modifs": opts.elems.btnDelete.modifs,
 				"iconName": "cross"
 			}) }}
 		</div>

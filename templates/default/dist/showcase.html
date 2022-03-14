@@ -557,7 +557,7 @@
 								<source type="image/jpg" srcset="images/simple-picture/img.jpg, images/simple-picture/img@2x.jpg 2x">
 								<img src="images/simple-picture/img.jpg" alt="alt">
 							</picture>
-							<button class="app-button app-button--red app-button--small app-button--only-icon app-card__btn-delete">
+							<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
 								<svg class="app-button__icon" width="20px" height="20px">
 									<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
 								</svg>
@@ -607,7 +607,95 @@
 							</div>
 						</div>
 					</a>
-					<div class="add-card "> Hello add card! </div>
+					<a class="app-card " href="#">
+						<div class="app-card__img">
+							<picture class="simple-picture app-card__pic">
+								<source type="image/webp" media="(max-width: 767px)" type="image/webp" srcset="images/simple-picture/img_mob.webp, images/simple-picture/img_mob@2x.webp 2x">
+								<source type="image/jpg" media="(max-width: 767px)" srcset="images/simple-picture/img_mob.jpg, images/simple-picture/img_mob@2x.jpg 2x">
+								<source type="image/webp" srcset="images/simple-picture/img.webp, images/simple-picture/img@2x.webp 2x">
+								<source type="image/jpg" srcset="images/simple-picture/img.jpg, images/simple-picture/img@2x.jpg 2x">
+								<img src="images/simple-picture/img.jpg" alt="alt">
+							</picture>
+							<button class="app-button app-button--red app-button--medium app-button--loading app-button--only-icon app-card__btn-delete">
+								<svg class="app-button__icon" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+								</svg>
+								<span class="spinner-icon app-button__loading">
+									<svg class="spinner-icon__loading" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+						<div class="app-card__information">
+							<div class="app-card__details">
+								<span class="category-badge category-badge--shooter app-card__category-badge"> Shooter </span>
+								<span class="app-card__title">Call of Duty: Warzone</span>
+								<div class="app-rating app-card__rating">
+									<div class="app-stars app-rating__stars">
+										<div class="app-stars__inner">
+											<div class="app-stars__grey-stars">
+												<div class="app-star app-stars__star"></div>
+												<div class="app-star app-stars__star"></div>
+												<div class="app-star app-stars__star"></div>
+												<div class="app-star app-stars__star"></div>
+												<div class="app-star app-stars__star"></div>
+											</div>
+											<div class="app-stars__yellow-stars" style="--amount-stars: 4.5; width: calc(var(--amount-stars) / 5 * 100%);">
+												<div class="app-star app-star--yellow app-stars__star"></div>
+												<div class="app-star app-star--yellow app-stars__star"></div>
+												<div class="app-star app-star--yellow app-stars__star"></div>
+												<div class="app-star app-star--yellow app-stars__star"></div>
+												<div class="app-star app-star--yellow app-stars__star"></div>
+											</div>
+										</div>
+									</div>
+									<span class="app-rating__votes">9,199</span>
+								</div>
+								<div class="app-card__description">
+									<p>Get the Captain Price Operator included with purchase</p>
+								</div>
+							</div>
+							<hr class="app-card__divider">
+							<div class="app-card__prices">
+								<div class="app-price app-card__price">
+									<span class="app-price__old">$1,299</span>
+									<span class="app-price__actual">$649</span>
+								</div>
+								<div class="sale-badge app-card__sale-badge">-50%</div>
+							</div>
+						</div>
+					</a>
+					<div class="add-card ">
+						<div class="add-card__information">
+							<div class="add-card__description">You can add a product card by clicking on the button</div>
+							<button class="app-button add-card__btn">
+								<svg class="app-button__icon" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+								</svg>
+								<span class="spinner-icon app-button__loading">
+									<svg class="spinner-icon__loading" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+									</svg>
+								</span> Add card
+							</button>
+						</div>
+					</div>
+					<div class="add-card ">
+						<div class="add-card__information">
+							<div class="add-card__description">You can add a product card by clicking on the button</div>
+							<button class="app-button app-button--loading add-card__btn">
+								<svg class="app-button__icon" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+								</svg>
+								<span class="spinner-icon app-button__loading">
+									<svg class="spinner-icon__loading" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+									</svg>
+								</span> Additing
+							</button>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

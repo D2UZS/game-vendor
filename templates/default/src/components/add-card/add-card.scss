@@ -1,2 +1,30 @@
 .add-card {
+	--border-size: 2px;
+
+	width: 280px;
+	padding: calc(44px - var(--border-size));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: var(--border-size) dashed var(--Primary-300);
+	border-radius: 12px;
+
+	&__information {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__description {
+		@extend .Body-S-Regular;
+
+		text-align: center;
+		color: var(--Content-400);
+	}
+
+	&__btn {
+		width: 100%;
+		max-width: unset;
+	}
 }

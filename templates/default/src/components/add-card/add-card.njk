@@ -1,15 +1,27 @@
 {#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
 
 {# Подключение компонентов, которые использует этот компонент #}
-{# {% from "app-star/app-star.njk" import appStar %} #}
+{% from "app-button/app-button.njk" import appButton %}
 
 {# Значения по умолчанию #}
-{% set defaults = {} %}
+{% set defaults = {
+	"elems": {
+		"btn": {
+			"text": "Add card"
+		}
+	}
+} %}
 
 {# Макрос компонента #}
 {% macro addCard(opts = {
 	"additionalClasses": "",
-	"modifs": []
+	"modifs": [],
+	"elems": {
+		"btn": {
+			"modifs": [],
+			"text": ""
+		}
+	}
 }) %}
 
 	{# Подключение значений по умолчанию #}
@@ -17,7 +29,16 @@
 
 	{# Код компонента #}
 	<div class="add-card {{ opts.modifs | generateModifs("add-card") -}} {{ opts.additionalClasses -}}">
-		Hello add card!
+		<div class="add-card__information">
+			<div class="add-card__description">You can add a product card by clicking on the button</div>
+			{{ appButton({
+				"tagName": "button",
+				"additionalClasses": "add-card__btn",
+				"modifs": opts.elems.btn.modifs,
+				"text": opts.elems.btn.text,
+				"iconName": "plus-circle"
+			}) }}
+		</div>
 	</div>
 
 {% endmacro %}
