@@ -1,11 +1,14 @@
 :root {
+	// Семейства шрифтов
 	--font-main: "Inter", Arial, Helvetica, sans-serif;
-
-	--transition-1: all 0.1s;
-	--transition-2: all 0.2s;
-
+	// Анимации
+	--Animation: all 0.2s ease-in-out;
+	// Тени
+	--Shadow-Large: 0px 20px 24px -4px rgba(16, 24, 40, 0.06), 0px 12px 12px -4px rgba(16, 24, 40, 0.02);
+	--Shadow-Medium: 0px 12px 12px -4px rgba(16, 24, 40, 0.02);
+	// Нажатия
 	--press-opacity: 0.8;
-
+	// Паддинги для контейнера
 	--safe-padding: 24px;
 	@include max-w__767 {
 		--safe-padding: 20px;

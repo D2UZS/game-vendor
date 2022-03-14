@@ -1,0 +1,46 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"imageType": "jpg",
+	"hasMobileVersion": false
+} %}
+
+{# Макрос компонента #}
+{% macro simplePicture(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"imagePath": "",
+	"imageName": "",
+	"imageType": "",
+	"hasMobileVersion": false
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<picture class="simple-picture {{ opts.modifs | generateModifs("simple-picture") -}} {{ opts.additionalClasses -}}">
+		{% if opts.hasMobileVersion %}
+			<source
+				type="image/webp"
+				media="(max-width: 767px)"
+				type="image/webp"
+				srcset="{{ opts.imagePath + opts.imageName + "_mob"}}.webp, {{ opts.imagePath + opts.imageName + "_mob"}}@2x.webp 2x">
+			<source
+				type="image/{{ opts.imageType }}"
+				media="(max-width: 767px)"
+				srcset="{{ opts.imagePath + opts.imageName + "_mob"}}.{{ opts.imageType }}, {{ opts.imagePath + opts.imageName + "_mob"}}@2x.{{ opts.imageType }} 2x">
+		{% endif %}
+		<source
+			type="image/webp"
+			srcset="{{ opts.imagePath + opts.imageName }}.webp, {{ opts.imagePath + opts.imageName }}@2x.webp 2x">
+		<source
+				type="image/{{ opts.imageType }}"
+				srcset="{{ opts.imagePath + opts.imageName }}.{{ opts.imageType }}, {{ opts.imagePath + opts.imageName }}@2x.{{ opts.imageType }} 2x">
+		<img
+				src="{{ opts.imagePath + opts.imageName }}.{{ opts.imageType }}"
+				alt="alt"
+			>
+	</picture>
+{% endmacro %}

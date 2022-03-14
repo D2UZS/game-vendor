@@ -1,6 +1,7 @@
 .category-badge {
 	--category-badge-color: var(--Content-500);
 
+	max-width: max-content;
 	padding: 2px 8px;
 	display: flex;
 	align-items: center;

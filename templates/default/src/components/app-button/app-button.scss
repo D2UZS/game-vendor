@@ -16,7 +16,6 @@
 	--background-color-border-color: var(--Primary-600);
 	border: 1px solid var(--background-color-border-color);
 	background-color: var(--background-color-border-color);
-	transition: var(--transition-1);
 
 	&--disabled {
 		--background-color-border-color: var(--Primary-200);

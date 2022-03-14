@@ -15,9 +15,15 @@
 @import "../ajax/**/*.scss";
 
 // *** Компоненты ***
+@import "../components/simple-picture/simple-picture.scss";
 @import "../components/category-badge/category-badge.scss";
 @import "../components/sale-badge/sale-badge.scss";
 @import "../components/app-price/app-price.scss";
 @import "../components/app-button/app-button.scss";
 @import "../components/app-link/app-link.scss";
 @import "../components/spinner-icon/spinner-icon.scss";
+@import "../components/app-star/app-star.scss";
+@import "../components/app-stars/app-stars.scss";
+@import "../components/app-rating/app-rating.scss";
+@import "../components/app-card/app-card.scss";
+@import "../components/add-card/add-card.scss";

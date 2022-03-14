@@ -1,288 +1,283 @@
 {% from "app-button/app-button.njk" import appButton %}
 
-<section class="section">
-	<h2>app-button</h2>
-	<div class="section__content section__content--col">
-		{# Primary #}
-		<div class="section__content-inner">
-			<h3>Primary</h3>
-			{{ appButton({
+{# Primary #}
+<div class="section__content-inner">
+	<h3>Primary</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": [],
 					"text": "Button"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["disabled"],
 					"text": "Disabled"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["loading"],
 					"text": "Button"
 				}) }}
-		</div>
-		{# Medium #}
-		<div class="section__content-inner">
-			<h3>Medium</h3>
-			{{ appButton({
+</div>
+{# Medium #}
+<div class="section__content-inner">
+	<h3>Medium</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["medium"],
 					"text": "Button"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["medium", "loading"],
 					"text": "Button"
 				}) }}
-		</div>
-		{# Small #}
-		<div class="section__content-inner">
-			<h3>Small</h3>
-			{{ appButton({
+</div>
+{# Small #}
+<div class="section__content-inner">
+	<h3>Small</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["small"],
 					"text": "Button"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["small", "loading"],
 					"text": "Button"
 				}) }}
-		</div>
-		{# As link #}
-		<div class="section__content-inner">
-			<h3>As link</h3>
-			{{ appButton({
+</div>
+{# As link #}
+<div class="section__content-inner">
+	<h3>As link</h3>
+	{{ appButton({
 				"tagName": "a",
 				"additionalClasses": "",
 				"modifs": [],
 				"text": "Link",
 				"linkPath": "#"
 			}) }}
-			{{ appButton({
+	{{ appButton({
 				"tagName": "a",
 				"linkPath": "#",
 				"additionalClasses": "",
 				"modifs": ["disabled"],
 				"text": "Disabled"
 			}) }}
-			{{ appButton({
+	{{ appButton({
 				"tagName": "a",
 				"linkPath": "#",
 				"additionalClasses": "",
 				"modifs": ["loading"],
 				"text": "Link"
 			}) }}
-		</div>
-		{# Before icon #}
-		<div class="section__content-inner">
-			<h3>Before icon</h3>
-			{{ appButton({
+</div>
+{# Before icon #}
+<div class="section__content-inner">
+	<h3>Before icon</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": [],
 					"text": "Button",
 					"iconName": "plus-circle"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["loading"],
 					"text": "Button",
 					"iconName": "plus-circle"
 				}) }}
-		</div>
-		{# After icon #}
-		<div class="section__content-inner">
-			<h3>After icon</h3>
-			{{ appButton({
+</div>
+{# After icon #}
+<div class="section__content-inner">
+	<h3>After icon</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["icon-after-txt"],
 					"text": "Button",
 					"iconName": "plus-circle"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["icon-after-txt", "loading"],
 					"text": "Button",
 					"iconName": "plus-circle"
 				}) }}
-		</div>
-		{# Only icon #}
-		<div class="section__content-inner">
-			<h3>Only icon</h3>
-			{{ appButton({
+</div>
+{# Only icon #}
+<div class="section__content-inner">
+	<h3>Only icon</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": [],
 					"iconName": "plus-circle"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["loading"],
 					"iconName": "plus-circle"
 				}) }}
-		</div>
-		{# Secondary #}
-		<div class="section__content-inner">
-			<h3>Secondary</h3>
-			{{ appButton({
+</div>
+{# Secondary #}
+<div class="section__content-inner">
+	<h3>Secondary</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary"],
 					"text": "Button"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "disabled"],
 					"text": "Disabled"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "loading"],
 					"text": "Button"
 				}) }}
-		</div>
-		{# Tertiary #}
-		<div class="section__content-inner">
-			<h3>Tertiary</h3>
-			{{ appButton({
+</div>
+{# Tertiary #}
+<div class="section__content-inner">
+	<h3>Tertiary</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["tertiary"],
 					"text": "Button"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["tertiary", "disabled"],
 					"text": "Disabled"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["tertiary", "loading"],
 					"text": "Button"
 				}) }}
-		</div>
-		{# X-red #}
-		<div class="section__content-inner">
-			<h3>X-red</h3>
-			{{ appButton({
+</div>
+{# X-red #}
+<div class="section__content-inner">
+	<h3>X-red</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red"],
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "disabled"],
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "loading"],
 					"iconName": "cross"
 				}) }}
-		</div>
-		{# X-secondary #}
-		<div class="section__content-inner">
-			<h3>X-secondary</h3>
-			{{ appButton({
+</div>
+{# X-secondary #}
+<div class="section__content-inner">
+	<h3>X-secondary</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary"],
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "disabled"],
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["secondary", "loading"],
 					"iconName": "cross"
 				}) }}
-		</div>
-		{# X-Medium #}
-		<div class="section__content-inner">
-			<h3>X-Medium</h3>
-			{{ appButton({
+</div>
+{# X-Medium #}
+<div class="section__content-inner">
+	<h3>X-Medium</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "medium"],
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "medium", "disabled"],
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["red", "medium", "loading"],
 					"iconName": "cross"
 				}) }}
-		</div>
-		{# X-Small #}
-		<div class="section__content-inner">
-			<h3>X-Small</h3>
-			{{ appButton({
-					"tagName": "button",
-					"additionalClasses": "",
-					"modifs": ["red", "small"],
-					"iconName": "cross"
-				}) }}
-			{{ appButton({
-					"tagName": "button",
-					"additionalClasses": "",
-					"modifs": ["red", "small", "disabled"],
-					"iconName": "cross"
-				}) }}
-			{{ appButton({
-					"tagName": "button",
-					"additionalClasses": "",
-					"modifs": ["red", "small", "loading"],
-					"iconName": "cross"
-				}) }}
-		</div>
-		{# Tag #}
-		<div class="section__content-inner">
-			<h3>Tag</h3>
-			{{ appButton({
+</div>
+{# X-Small #}
+<div class="section__content-inner">
+	<h3>X-Small</h3>
+	{{ appButton({
+		"tagName": "button",
+		"additionalClasses": "",
+		"modifs": ["red", "small"],
+		"iconName": "cross"
+	}) }}
+	{{ appButton({
+		"tagName": "button",
+		"additionalClasses": "",
+		"modifs": ["red", "small", "disabled"],
+		"iconName": "cross"
+	}) }}
+	{{ appButton({
+		"tagName": "button",
+		"additionalClasses": "",
+		"modifs": ["red", "small", "loading"],
+		"iconName": "cross"
+	}) }}
+</div>
+{# Tag #}
+<div class="section__content-inner">
+	<h3>Tag</h3>
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["medium", "tag", "icon-after-txt"],
 					"text": "Button",
 					"iconName": "cross"
 				}) }}
-			{{ appButton({
+	{{ appButton({
 					"tagName": "button",
 					"additionalClasses": "",
 					"modifs": ["medium", "tag", "loading", "icon-after-txt"],
 					"text": "Button",
 					"iconName": "cross"
 				}) }}
-		</div>
-	</div>
-</section>
+</div>

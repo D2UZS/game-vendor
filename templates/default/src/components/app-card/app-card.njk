@@ -1,0 +1,123 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "simple-picture/simple-picture.njk" import simplePicture %}
+{% from "app-button/app-button.njk" import appButton %}
+{% from "category-badge/category-badge.njk" import categoryBadge %}
+{% from "app-rating/app-rating.njk" import appRating %}
+{% from "app-price/app-price.njk" import appPrice %}
+{% from "sale-badge/sale-badge.njk" import saleBadge %}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"elems": {
+		"simplePicture": {
+			"imagePath": "images/simple-picture/",
+			"imageName": "img",
+			"imageType": "jpg",
+			"hasMobileVersion": true
+		},
+		"categoryBadge": {
+			"modifs": ['shooter'],
+			"text": "Shooter"
+		},
+		"title": "Call of Duty: Warzone",
+		"appRating": {
+			"amountStars": 4.5,
+			"votes": "9,199"
+		},
+		"description": "Get the Captain Price Operator included with purchase",
+		"appPrice": {
+			"oldPrice": "1,299",
+			"actualPrice": "649"
+		},
+		"saleBadge": {
+			"text": "-50%"
+		}
+	}
+} %}
+
+{# Макрос компонента #}
+{% macro appCard(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"elems": {
+		"simplePicture": {
+			"imagePath": "",
+			"imageName": "",
+			"imageType": "",
+			"hasMobileVersion": false
+		},
+		"categoryBadge": {
+			"modifs": [],
+			"text": ""
+		},
+		"title": "",
+		"appRating": {
+			"amountStars": null,
+			"votes": ""
+		},
+		"description": "",
+		"appPrice": {
+			"oldPrice": "",
+			"actualPrice": ""
+		},
+		"saleBadge": {
+			"text": ""
+		}
+	}
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<a class="app-card {{ opts.modifs | generateModifs("app-card") -}} {{ opts.additionalClasses -}}" href="#">
+		<div class="app-card__img">
+			{{ simplePicture({
+				"additionalClasses": "app-card__pic",
+				"imagePath": opts.elems.simplePicture.imagePath,
+				"imageName": opts.elems.simplePicture.imageName,
+				"imageType": opts.elems.simplePicture.imageType,
+				"hasMobileVersion": opts.elems.simplePicture.hasMobileVersion
+			}) }}
+			{{ appButton({
+				"tagName": "button",
+				"additionalClasses": "app-card__btn-delete",
+				"modifs": ["red", "small"],
+				"iconName": "cross"
+			}) }}
+		</div>
+		<div class="app-card__information">
+			<div class="app-card__details">
+				{{ categoryBadge({
+					"additionalClasses": "app-card__category-badge",
+					"modifs": opts.elems.categoryBadge.modifs,
+					"text": opts.elems.categoryBadge.text
+				}) }}
+				<span class="app-card__title">{{ opts.elems.title }}</span>
+				{{ appRating({
+					"additionalClasses": "app-card__rating",
+					"amountStars": opts.elems.appRating.amountStars,
+					"votes": opts.elems.appRating.votes
+				}) }}
+				<div class="app-card__description">
+					<p>{{ opts.elems.description }}</p>
+				</div>
+			</div>
+			<hr class="app-card__divider">
+			<div class="app-card__prices">
+				{{ appPrice({
+					"additionalClasses": "app-card__price",
+					"oldPrice": opts.elems.appPrice.oldPrice,
+					"actualPrice": opts.elems.appPrice.actualPrice
+				}) }}
+				{{ saleBadge({
+					"additionalClasses": "app-card__sale-badge",
+					"text": opts.elems.saleBadge.text
+				}) }}
+			</div>
+		</div>
+	</a>
+
+{% endmacro %}

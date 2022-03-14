@@ -1,0 +1,42 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "app-star/app-star.njk" import appStar %}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"amountStars": 4.5
+} %}
+
+{# Макрос компонента #}
+{% macro appStars(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"amountStars": null
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<div class="app-stars {{ opts.modifs | generateModifs("app-stars") -}} {{ opts.additionalClasses -}}">
+		<div class="app-stars__inner">
+			<div class="app-stars__grey-stars">
+				{% for i in range(0, 5) %}
+					{{ appStar({
+						"additionalClasses": "app-stars__star"
+					}) }}
+				{% endfor %}
+			</div>
+			<div class="app-stars__yellow-stars" style="--amount-stars: {{ opts.amountStars }}; width: calc(var(--amount-stars) / 5 * 100%);">
+				{% for i in range(0, 5) %}
+					{{ appStar({
+						"additionalClasses": "app-stars__star",
+						"modifs": ["yellow"]
+					}) }}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+{% endmacro %}

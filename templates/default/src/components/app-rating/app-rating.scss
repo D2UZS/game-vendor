@@ -1,0 +1,14 @@
+.app-rating {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&__stars {
+	}
+
+	&__votes {
+		@extend .Body-XS-Regular;
+
+		color: var(--Content-600);
+	}
+}

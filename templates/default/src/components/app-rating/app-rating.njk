@@ -1,0 +1,32 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "app-stars/app-stars.njk" import appStars %}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"amountStars": 4.5,
+	"votes": "9,199"
+} %}
+
+{# Макрос компонента #}
+{% macro appRating(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"amountStars": null,
+	"votes": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<div class="app-rating {{ opts.modifs | generateModifs("app-rating") -}} {{ opts.additionalClasses -}}">
+		{{ appStars({
+			"additionalClasses": "app-rating__stars",
+			"amountStars": opts.amountStars
+		}) }}
+		<span class="app-rating__votes">{{ opts.votes }}</span>
+	</div>
+
+{% endmacro %}

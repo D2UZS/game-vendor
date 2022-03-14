@@ -1,0 +1,12 @@
+.app-star {
+	width: 12px;
+	height: 12px;
+
+	background-image: url(../images/icons/star.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	&--yellow {
+		background-image: url(../images/icons/star-yellow.svg);
+	}
+}

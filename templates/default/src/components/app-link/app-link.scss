@@ -4,8 +4,6 @@
 	@extend .Body-M-Medium;
 	color: var(--Content-100);
 
-	transition: var(--transition-1);
-
 	&:not(.app-link--disabled) {
 		@include hover {
 			color: var(--Content-400);

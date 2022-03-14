@@ -1,23 +1,23 @@
 {#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
 
+{# Подключение компонентов, которые использует этот компонент #}
+{# {% from "app-star/app-star.njk" import appStar %} #}
+
 {# Значения по умолчанию #}
-{% set defaults = {
-	"text": "text default"
-} %}
+{% set defaults = {} %}
 
 {# Макрос компонента #}
-{% macro categoryBadge(opts = {
+{% macro addCard(opts = {
 	"additionalClasses": "",
-	"modifs": [],
-	"text": ""
+	"modifs": []
 }) %}
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<span class="category-badge {{ opts.modifs | generateModifs("category-badge") -}} {{ opts.additionalClasses -}}">
-		{{ opts.text }}
-	</span>
+	<div class="add-card {{ opts.modifs | generateModifs("add-card") -}} {{ opts.additionalClasses -}}">
+		Hello add card!
+	</div>
 
 {% endmacro %}

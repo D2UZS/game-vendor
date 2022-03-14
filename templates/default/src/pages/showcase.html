@@ -5,19 +5,80 @@
 {% endblock %}
 
 {% block content %}
-	{# category-badge #}
-	{% include "../components/@showcase/category-badge.html" %}
 
-	{# app-price and sale-badge #}
-	{% include "../components/@showcase/app-price-and-sale-badge.html" %}
+	{# category-badge #}
+	<section class="section">
+		<h2>category-badge</h2>
+		<div class="section__content section__content--col">
+			{% include "../components/@showcase/category-badge.html" %}
+		</div>
+	</section>
+
+	{# app-price / sale-badge #}
+	<section class="section">
+		<h2>app-price / sale-badge</h2>
+		<div class="section__content section__content--col">
+			{# appPrice #}
+			{% include "../components/@showcase/app-price.html" %}
+			{# saleBadge #}
+			{% include "../components/@showcase/sale-badge.html" %}
+		</div>
+	</section>
+
+	{# app-star / app-stars / app-rating #}
+	<section class="section">
+		<h2>app-star / app-stars / app-rating</h2>
+		<div class="section__content section__content--col">
+			{# appStar #}
+			{% include "../components/@showcase/app-star.html" %}
+			{# appStars #}
+			{% include "../components/@showcase/app-stars.html" %}
+			{# appRating #}
+			{% include "../components/@showcase/app-rating.html" %}
+		</div>
+	</section>
 
 	{# icons #}
-	{% include "../components/@showcase/icons.html" %}
+	<section class="section">
+		<h2>icons</h2>
+		<div class="section__content section__content--col">
+			{% include "../components/@showcase/icons.html" %}
+		</div>
+	</section>
 
 	{# app-button #}
-	{% include "../components/@showcase/app-button.html" %}
+	<section class="section">
+		<h2>app-button</h2>
+		<div class="section__content section__content--col">
+			{% include "../components/@showcase/app-button.html" %}
+		</div>
+	</section>
 
 	{# app-link #}
-	{% include "../components/@showcase/app-link.html" %}
+	<section class="section">
+		<h2>app-link</h2>
+		<div class="section__content section__content--col">
+			{% include "../components/@showcase/app-link.html" %}
+		</div>
+	</section>
+
+	{# simple-picture #}
+	<section class="section">
+		<h2>simple-picture</h2>
+		<div class="section__content section__content--col">
+			{% include "../components/@showcase/simple-picture.html" %}
+		</div>
+	</section>
+
+	{# app-card / add-card #}
+	<section class="section">
+		<h2>app-card / add-card</h2>
+		<div class="section__content section__content--col">
+			{# appCard #}
+			{% include "../components/@showcase/app-card.html" %}
+			{# addCard #}
+			{% include "../components/@showcase/add-card.html" %}
+		</div>
+	</section>
 
 {% endblock %}

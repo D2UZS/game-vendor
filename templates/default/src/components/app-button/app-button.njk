@@ -24,10 +24,10 @@
 
 	{# Код компонента #}
 	<{{ opts.tagName }}
-	class="app-button {{ opts.modifs | generateModifs("app-button") -}}
-	{%- if opts.iconName and not opts.text -%} app-button--only-icon {%- endif -%}
-	{%- if  opts.text and not opts.iconName -%} app-button--only-text {%- endif -%}
-	{{ opts.additionalClasses -}}"
+	class="app-button {{ opts.modifs | generateModifs("app-button") }}
+	{%- if opts.iconName and not opts.text -%} app-button--only-icon {% endif %}
+	{%- if  opts.text and not opts.iconName -%} app-button--only-text {% endif %}
+	{{- opts.additionalClasses }}"
 	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
 		{% if opts.iconName %}

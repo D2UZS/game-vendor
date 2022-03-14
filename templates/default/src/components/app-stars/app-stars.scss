@@ -1,0 +1,33 @@
+.app-stars {
+	--star-width: 12px;
+	--margin-star: 4px;
+
+	&__inner {
+		position: relative;
+		// Задается отрицательный марджин, что бы нивелировать отступы у крайних звезд
+		margin: 0 calc(var(--margin-star) / -2);
+	}
+
+	&__grey-stars,
+	&__yellow-stars {
+		display: flex;
+	}
+
+	&__grey-stars {
+	}
+
+	&__yellow-stars {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		overflow: hidden;
+	}
+
+	&__star {
+		// К ширине звезды добавляется отступ между звездами, что бы корректно рассчитывались проценты app-stars__yellow-stars (задается инлайново)
+		width: calc(var(--star-width) + var(--margin-star));
+		height: 12px;
+		flex-shrink: 0;
+	}
+}

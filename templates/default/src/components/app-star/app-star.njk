@@ -1,23 +1,18 @@
 {#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
 
 {# Значения по умолчанию #}
-{% set defaults = {
-	"text": "text default"
-} %}
+{% set defaults = {} %}
 
 {# Макрос компонента #}
-{% macro categoryBadge(opts = {
+{% macro appStar(opts = {
 	"additionalClasses": "",
-	"modifs": [],
-	"text": ""
+	"modifs": []
 }) %}
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<span class="category-badge {{ opts.modifs | generateModifs("category-badge") -}} {{ opts.additionalClasses -}}">
-		{{ opts.text }}
-	</span>
+	<div class="app-star {{ opts.modifs | generateModifs("app-star") -}} {{ opts.additionalClasses -}}"></div>
 
 {% endmacro %}
