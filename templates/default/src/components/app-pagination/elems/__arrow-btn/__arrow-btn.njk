@@ -1,0 +1,22 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"iconName": "arrow-left"
+} %}
+
+{# Макрос компонента #}
+{% macro appPaginationArrowBtn(opts = {
+	"iconName": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<a class="pagination-arrow-btn app-pagination__btn" href="#">
+		<svg width="20px" height="20px">
+			<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
+		</svg>
+	</a>
+{% endmacro %}

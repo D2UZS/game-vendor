@@ -1,0 +1,25 @@
+.pagination-arrow-btn {
+	padding: 8px;
+
+	fill: var(--Content-900);
+
+	&:not(.pagination-arrow-btn--disabled) {
+		@include hover {
+			fill: var(--Primary-600);
+			background-color: var(--Primary-50);
+		}
+
+		&:active {
+			opacity: var(--press-opacity);
+		}
+	}
+
+	&--disabled {
+		fill: var(--Content-300);
+		cursor: default;
+	}
+
+	svg {
+		display: block;
+	}
+}

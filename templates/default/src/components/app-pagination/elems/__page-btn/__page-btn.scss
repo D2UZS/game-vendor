@@ -1,0 +1,34 @@
+.pagination-page-btn {
+	display: block;
+	padding: 8px 2px;
+
+	&:not(.pagination-page-btn--disabled):not(.pagination-page-btn--active):not(.pagination-page-btn--more) {
+		@include hover {
+			color: var(--Primary-600);
+			background-color: var(--Primary-50);
+		}
+
+		&:active {
+			opacity: var(--press-opacity);
+		}
+	}
+
+	&--active {
+		color: var(--Base);
+		background-color: var(--Primary-600);
+	}
+
+	&--more {
+		color: var(--Content-400);
+	}
+
+	&--disabled {
+		color: var(--Content-300);
+	}
+
+	&--disabled,
+	&--active,
+	&--more {
+		cursor: default;
+	}
+}

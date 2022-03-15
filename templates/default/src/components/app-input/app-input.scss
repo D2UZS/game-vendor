@@ -1,0 +1,32 @@
+.app-input {
+	--border-size: 1px;
+
+	height: 44px;
+	padding: calc(10px - var(--border-size)) calc(18px - var(--border-size));
+
+	@extend .Body-M-Medium;
+	color: var(--Content-900);
+
+	background-color: var(--Base);
+	border: var(--border-size) solid var(--Content-300);
+	border-radius: 8px;
+
+	&::placeholder {
+		color: var(--Content-400);
+	}
+
+	&--search {
+		padding-left: calc(46px - var(--border-size));
+		background-image: url(../images/icons/search-grey.svg);
+		background-repeat: no-repeat;
+		background-position: calc(18px - var(--border-size)) center;
+	}
+
+	@include hover {
+		border-color: var(--Content-400);
+	}
+
+	&:focus {
+		border-color: var(--Content-400);
+	}
+}

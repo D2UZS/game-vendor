@@ -1,0 +1,30 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {} %}
+
+{# Макрос компонента #}
+{% macro appPaginationPageBtn(opts = {
+	"modifs": []
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	{% for i in range(0, 7) %}
+		<li class="app-pagination__btn">
+			{% if loop.revindex === 2 %}
+				<span class="pagination-page-btn pagination-page-btn--more">...</span>
+			{% else %}
+				<a href="#" class="pagination-page-btn {% if loop.index === 1 -%} pagination-page-btn--active {%- endif %}">
+					{%- if loop.last -%}
+								99
+							{%- else -%}
+						{{ loop.index }}
+					{%- endif -%}
+				</a>
+			{% endif %}
+		</li>
+	{% endfor %}
+{% endmacro %}

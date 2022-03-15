@@ -1,0 +1,36 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение дочерних элементов #}
+{% from "./elems/__arrow-btn/__arrow-btn.njk" import appPaginationArrowBtn %}
+{% from "./elems/__page-btn/__page-btn.njk" import appPaginationPageBtn %}
+
+{# Значения по умолчанию #}
+{% set defaults = {} %}
+
+{# Макрос компонента #}
+{% macro appPagination(opts = {
+	"additionalClasses": "",
+	"modifs": []
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<div class="app-pagination {{ opts.modifs | generateModifs("app-pagination") -}} {{ opts.additionalClasses -}}">
+		{{ appPaginationArrowBtn({
+			"iconName": "arrow-left"
+		}) }}
+
+		<ul class="app-pagination__pages">
+			{{ appPaginationPageBtn({
+				"additionalClasses": "app-pagination__btn"
+			}) }}
+		</ul>
+
+		{{ appPaginationArrowBtn({
+			"iconName": "arrow-right"
+		}) }}
+	</div>
+
+{% endmacro %}

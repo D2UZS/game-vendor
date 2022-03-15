@@ -1,0 +1,23 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"type": "text",
+	"placeholder": "input"
+} %}
+
+{# Макрос компонента #}
+{% macro appInput(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"type": "",
+	"placeholder": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<input class="app-input {{ opts.modifs | generateModifs("app-input") -}} {{ opts.additionalClasses -}}" type={{ opts.type }} placeholder={{ opts.placeholder }}>
+
+{% endmacro %}

@@ -5,9 +5,9 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 // *** Отключаем смену фона при автозаполнении хрома ***
@@ -15,13 +15,13 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
+	transition: background-color 5000s ease-in-out 0s;
 }
 
 // *** Отключаем нативную обводку у обязательных полей ***
 input:invalid,
 input:required {
-    box-shadow: none;
+	box-shadow: none;
 }
 
 // *** Убираем внешние отступы ***
@@ -39,13 +39,13 @@ figcaption,
 blockquote,
 dl,
 dd {
-    margin: 0;
+	margin: 0;
 }
 
 // *** Упрощаем работу с изображениями ***
 img {
-    max-width: 100%;
-    display: block;
+	max-width: 100%;
+	display: block;
 }
 
 // *** Наследуем шрифты для инпутов и кнопок ***
@@ -53,22 +53,23 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+	font: inherit;
 }
 
 // *** Удаляем все анимации и переходы для людей, которые предпочитай их не использовать ***
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
 // *** Убираем подчеркивание у ссылок ***
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: inherit;
 }
 
 a:active,
@@ -76,10 +77,10 @@ a:active:focus,
 a:focus,
 button:active:focus,
 button:focus {
-    outline: 0;
-    outline-color: transparent;
-    outline-width: 0;
-    outline-style: none;
+	outline: 0;
+	outline-color: transparent;
+	outline-width: 0;
+	outline-style: none;
 }
 
 input[type="text"],
@@ -88,28 +89,28 @@ input[type="email"],
 input[type="tel"],
 input[type="date"],
 textarea {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 button {
-    padding: 0;
-    border: none;
-    color: inherit;
-    background-color: unset;
-    cursor: pointer;
+	padding: 0;
+	border: none;
+	color: inherit;
+	background-color: unset;
+	cursor: pointer;
 }
 
 hr {
-    border: none;
-    margin: unset;
+	border: none;
+	margin: unset;
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 :focus,
 :active {
-    outline: none;
+	outline: none;
 }
