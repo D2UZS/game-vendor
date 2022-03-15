@@ -1,0 +1,37 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{% set contentData = [
+	{
+		"text": "This is a placeholder",
+		"isPlaceholder": true
+	}, {
+		"text": "Рыба текст 2"
+	}, {
+		"text": "Рыба текст 3"
+	}, {
+		"text": "Рыба текст 4"
+	}
+] %}
+
+{# Значения по умолчанию #}
+{% set defaults = {} %}
+
+{# Макрос компонента #}
+{% macro appSelect(opts = {
+	"additionalClasses": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<select class="app-select {{ opts.additionalClasses }} js-choices">
+		{% for item in opts.contentData or contentData %}
+			{% if loop.index === 1 and item.isPlaceholder %}
+				<option value="">{{ item.text }}</option>
+			{% else %}
+				<option value="{{ item.text }}" {% if item.selected %}selected{% endif %}>{{ item.text }}</option>
+			{% endif %}
+		{% endfor %}
+	</select>
+{% endmacro %}
