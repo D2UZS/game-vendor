@@ -21,17 +21,19 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-button" %}
 
 	{# Код компонента #}
 	<{{ opts.tagName }}
-	class="app-button {{ opts.modifs | generateModifs("app-button") }}
-	{%- if opts.iconName and not opts.text -%} app-button--only-icon {% endif %}
-	{%- if  opts.text and not opts.iconName -%} app-button--only-text {% endif %}
+	class="{{ opts.modifs | classWithModifs(BLOCK) }}
+	{% if opts.iconName and not opts.text -%} {{ BLOCK }}--only-icon {% endif %}
+	{%- if  opts.text and not opts.iconName -%} {{ BLOCK }}--only-text {% endif %}
 	{{- opts.additionalClasses }}"
 	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
 		{% if opts.iconName %}
-			<svg class="app-button__icon" width="20px" height="20px">
+			<svg class="{{ BLOCK }}__icon" width="20px" height="20px">
 				<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
 			</svg>
 		{% endif %}

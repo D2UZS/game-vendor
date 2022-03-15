@@ -18,7 +18,7 @@ module.exports = () => {
             return newObject;
         });
 
-        env.addFilter("generateModifs", (modifsArray, elemClass) => {
+        env.addFilter("classWithModifs", (modifsArray, elemClass) => {
             let clasesString = elemClass;
             if (!modifsArray) return clasesString;
 

@@ -20,7 +20,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<picture class="simple-picture {{ opts.modifs | generateModifs("simple-picture") -}} {{ opts.additionalClasses -}}">
+	<picture class="{{ opts.modifs | classWithModifs("simple-picture") }} {{ opts.additionalClasses }}">
 		{% if opts.hasMobileVersion %}
 			<source
 				type="image/webp"

@@ -17,7 +17,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="app-price {{ opts.modifs | generateModifs("app-price") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("app-price") }} {{ opts.additionalClasses }}">
 		{% if opts.oldPrice %}
 			<span class="app-price__old">${{ opts.oldPrice }}</span>
 		{% endif %}

@@ -18,6 +18,6 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<input class="app-input {{ opts.modifs | generateModifs("app-input") -}} {{ opts.additionalClasses -}}" type={{ opts.type }} placeholder={{ opts.placeholder }}>
+	<input class="{{ opts.modifs | classWithModifs("app-input") }} {{ opts.additionalClasses }}" type={{ opts.type }} placeholder={{ opts.placeholder }}>
 
 {% endmacro %}

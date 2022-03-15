@@ -25,7 +25,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<select class="app-select {{ opts.additionalClasses }} js-choices">
+	<select class="{{ opts.modifs | classWithModifs("app-select") }} {{ opts.additionalClasses }} js-choices">
 		{% for item in opts.contentData or contentData %}
 			{% if loop.index === 1 and item.isPlaceholder %}
 				<option value="">{{ item.text }}</option>

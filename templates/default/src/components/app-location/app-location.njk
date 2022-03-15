@@ -31,7 +31,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="app-location {{ opts.modifs | generateModifs("app-location") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("app-location") }} {{ opts.additionalClasses }}">
 		<svg class="app-location__icon" width="20px" height="20px">
 			<use xlink:href="images/icons/sprites/user-icons.svg#pin"></use>
 		</svg>

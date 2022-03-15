@@ -28,7 +28,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="add-card {{ opts.modifs | generateModifs("add-card") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("add-card") }} {{ opts.additionalClasses }}">
 		<div class="add-card__information">
 			<div class="add-card__description">You can add a product card by clicking on the button</div>
 			{{ appButton({

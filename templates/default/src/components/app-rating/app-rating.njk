@@ -21,7 +21,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="app-rating {{ opts.modifs | generateModifs("app-rating") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("app-rating") }} {{ opts.additionalClasses }}">
 		{{ appStars({
 			"additionalClasses": "app-rating__stars",
 			"amountStars": opts.amountStars

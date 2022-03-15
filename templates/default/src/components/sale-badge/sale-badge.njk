@@ -16,7 +16,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="sale-badge {{ opts.modifs | generateModifs("sale-badge") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("sale-badge") }} {{ opts.additionalClasses }}">
 		{{- opts.text -}}
 	</div>
 

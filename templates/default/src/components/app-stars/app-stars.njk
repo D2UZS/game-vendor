@@ -19,7 +19,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="app-stars {{ opts.modifs | generateModifs("app-stars") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("app-stars") }} {{ opts.additionalClasses }}">
 		<div class="app-stars__inner">
 			<div class="app-stars__grey-stars">
 				{% for i in range(0, 5) %}

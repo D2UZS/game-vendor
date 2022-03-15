@@ -13,6 +13,6 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="app-star {{ opts.modifs | generateModifs("app-star") -}} {{ opts.additionalClasses -}}"></div>
+	<div class="{{ opts.modifs | classWithModifs("app-star") }} {{ opts.additionalClasses }}"></div>
 
 {% endmacro %}

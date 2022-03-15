@@ -13,7 +13,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<span class="spinner-icon {{ opts.modifs | generateModifs("sale-badge") -}} {{ opts.additionalClasses -}}">
+	<span class="{{ opts.modifs | classWithModifs("spinner-icon") }} {{ opts.additionalClasses }}">
 		<svg class="spinner-icon__loading" width="20px" height="20px">
 			<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
 		</svg>

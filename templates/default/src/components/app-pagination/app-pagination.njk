@@ -17,7 +17,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<div class="app-pagination {{ opts.modifs | generateModifs("app-pagination") -}} {{ opts.additionalClasses -}}">
+	<div class="{{ opts.modifs | classWithModifs("app-pagination") }} {{ opts.additionalClasses }}">
 		{{ appPaginationArrowBtn({
 			"iconName": "arrow-left"
 		}) }}

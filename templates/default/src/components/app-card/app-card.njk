@@ -78,7 +78,7 @@
 	{% set opts = defaults | concatWithObject(opts) %}
 
 	{# Код компонента #}
-	<a class="app-card {{ opts.modifs | generateModifs("app-card") -}} {{ opts.additionalClasses -}}" href="#">
+	<a class="{{ opts.modifs | classWithModifs("app-card") }} {{ opts.additionalClasses }}" href="#">
 		<div class="app-card__img">
 			{{ simplePicture({
 				"additionalClasses": "app-card__pic",

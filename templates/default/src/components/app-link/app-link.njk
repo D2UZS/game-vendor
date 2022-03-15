@@ -24,7 +24,7 @@
 
 	{# Код компонента #}
 	<{{ opts.tagName }}
-	class="app-link {{ opts.modifs | generateModifs("app-link") -}} {{ opts.additionalClasses -}}"
+	class="{{ opts.modifs | classWithModifs("app-link") }} {{ opts.additionalClasses }}"
 	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
 

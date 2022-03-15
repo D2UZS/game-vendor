@@ -11,12 +11,11 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
-
 	{# Класс компонента #}
 	{% set BLOCK = "app-logo" %}
 
 	{# Код компонента #}
-	<a class="{{ opts.modifs | generateModifs(BLOCK) -}} {{ opts.additionalClasses -}}" href="index.html">
+	<a class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}" href="index.html">
 		<img class="{{ BLOCK }}__img" src="images/icons/logo.svg" alt="game-vendor">
 	</a>
 

@@ -8,31 +8,31 @@
 #}
 
 {% set defaults = {
-    "titleText": "Блок, который выводится сразу на страницу"
+	"titleText": "Блок, который выводится сразу на страницу"
 } %}
 
 {% macro example(opts = {
-    "additionalClasses": "",
-    "modifs": [],
-    "titleText": "",
-    "elems": {
-        "elemsOne": false
-    }
+	"additionalClasses": "",
+	"modifs": [],
+	"titleText": "",
+	"elems": {
+		"elemsOne": false
+	}
 }) %}
 
-    {% set opts = defaults | concatWithObject(opts) %}
+	{% set opts = defaults | concatWithObject(opts) %}
 
-    <div class="{{ opts.additionalClasses }} example {{ opts.modifs | generateModifs("example") }}">
-        <div class="h1">{{ opts.titleText }}</div>
+	<div class="{{ opts.additionalClasses }} example {{ opts.modifs | classWithModifs("example") }}">
+		<div class="h1">{{ opts.titleText }}</div>
 
-        {% if opts.elems.elemsOne %}
-            {% include "../example/elems/__elem-one/__elem-one.html" %}
-        {% endif %}
+		{% if opts.elems.elemsOne %}
+			{% include "../example/elems/__elem-one/__elem-one.html" %}
+		{% endif %}
 
-        {{ exampleElemTwo({
+		{{ exampleElemTwo({
             "additionalClasses": "",
             "textContent": "Пример элемента блока, подключаемого через макрос",
             "elems": {}
         }) }}
-    </div>
+	</div>
 {% endmacro %}
