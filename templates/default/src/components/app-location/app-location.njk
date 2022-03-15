@@ -1,0 +1,47 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "app-link/app-link.njk" import appLink %}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"elems": {
+		"appLink": {
+			"tagName": "a",
+			"linkPath": "#",
+			"text": "Dublin, Republic of Ireland"
+		}
+	}
+} %}
+
+{# Макрос компонента #}
+{% macro appLocation(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"elems": {
+		"appLink": {
+			"tagName": "",
+			"linkPath": "",
+			"text": ""
+		}
+	}
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Код компонента #}
+	<div class="app-location {{ opts.modifs | generateModifs("app-location") -}} {{ opts.additionalClasses -}}">
+		<svg class="app-location__icon" width="20px" height="20px">
+			<use xlink:href="images/icons/sprites/user-icons.svg#pin"></use>
+		</svg>
+		{{ appLink({
+			"tagName": opts.elems.appLink.tagName,
+			"linkPath": opts.elems.appLink.linkPath,
+			"additionalClasses": "app-location__link",
+			"modifs": ["dark-grey", "medium"],
+			"text": opts.elems.appLink.text
+		}) }}
+	</div>
+
+{% endmacro %}

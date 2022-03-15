@@ -1,0 +1,23 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {} %}
+
+{# Макрос компонента #}
+{% macro appLogo(opts = {
+	"additionalClasses": "",
+	"modifs": []
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+
+	{# Класс компонента #}
+	{% set BLOCK = "app-logo" %}
+
+	{# Код компонента #}
+	<a class="{{ opts.modifs | generateModifs(BLOCK) -}} {{ opts.additionalClasses -}}" href="index.html">
+		<img class="{{ BLOCK }}__img" src="images/icons/logo.svg" alt="game-vendor">
+	</a>
+
+{% endmacro %}

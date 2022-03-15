@@ -1,0 +1,12 @@
+.app-location {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&__icon {
+		fill: var(--Content-900);
+	}
+
+	&__link {
+	}
+}

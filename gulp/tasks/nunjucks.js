@@ -19,12 +19,12 @@ module.exports = () => {
         });
 
         env.addFilter("generateModifs", (modifsArray, elemClass) => {
-            let clasesString = "";
+            let clasesString = elemClass;
             if (!modifsArray) return clasesString;
 
             for (const modificator of modifsArray) {
                 if (modificator === "") continue;
-                clasesString += `${elemClass}--${modificator} `;
+                clasesString += ` ${elemClass}--${modificator}`;
             }
 
             return clasesString;
