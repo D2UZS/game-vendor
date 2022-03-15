@@ -1,6 +1,8 @@
+// *** normalize ***
+@import "base/normalize.scss";
 // *** Базовые ***
 @import "base/mixins.scss";
-@import "base/reset.scss";
+@import "base/null.scss";
 @import "base/fonts.scss";
 @import "base/variables.scss";
 @import "base/colors.scss";
