@@ -1,3 +1,52 @@
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "../../app-input/app-input.njk" import appInput %}
+{% from "../../app-button/app-button.njk" import appButton %}
+{% from "../../app-link/app-link.njk" import appLink %}
+
+{# Класс секции #}
 {% set BLOCK = "footer" %}
 
-<footer class="{{ BLOCK }}"></footer>
+{# Код секции #}
+<footer class="{{ BLOCK }}">
+	<div class="{{ BLOCK }}__container container">
+		<div class="{{ BLOCK }}__subscribe">
+			<div class="{{ BLOCK }}__subscribe-text">
+				<span class="{{ BLOCK }}__subscribe-title">Join our newsletter</span>
+				<span class="{{ BLOCK }}__subscribe-description">We’ll send you a nice letter one per week. No spam.</span>
+			</div>
+			<form action="#" class="{{ BLOCK }}__subscribe-form">
+				{{ appInput({
+					"additionalClasses": BLOCK + "__subscribe-input",
+					"type": "email",
+					"placeholder": "Enter email"
+				}) }}
+				{{ appButton({
+					"tagName": "button",
+					"additionalClasses": BLOCK + "__subscribe-btn",
+					"text": "Subscribe"
+				}) }}
+			</form>
+		</div>
+		<hr class="{{ BLOCK }}__divider">
+		<div class="{{ BLOCK }}__columns">
+			{% for column in globalData.json.footer %}
+				<div class="{{ BLOCK }}__column">
+					<span class="{{ BLOCK }}__column-title">{{ column.title }}</span>
+					<ul class="{{ BLOCK }}__column-list">
+						{% for link in column.links %}
+							<li class="{{ BLOCK }}__column-item">
+								{{ appLink({
+									"additionalClasses": BLOCK + "__column-link",
+									"text": link
+								}) }}
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="{{ BLOCK }}__bottom">
+			<span class="{{ BLOCK }}__copyright">Copyright © GameVendor, 2022</span>
+		</div>
+	</div>
+</footer>

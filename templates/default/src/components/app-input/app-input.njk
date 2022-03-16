@@ -20,6 +20,6 @@
 	{% set BLOCK = "app-input" %}
 
 	{# Код компонента #}
-	<input class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}" type={{ opts.type }} placeholder={{ opts.placeholder }}>
+	<input class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}" type="{{ opts.type }}" placeholder="{{ opts.placeholder }}">
 
 {% endmacro %}

@@ -9,6 +9,11 @@
 	font-weight: $font-weight;
 }
 
+@mixin max-w__374 {
+	@media (max-width: 374px) {
+		@content;
+	}
+}
 @mixin max-w__767 {
 	@media (max-width: 767px) {
 		@content;

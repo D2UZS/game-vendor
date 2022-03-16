@@ -26,10 +26,7 @@
 
 	{# Код компонента #}
 	<{{ opts.tagName }}
-	class="{{ opts.modifs | classWithModifs(BLOCK) }}
-	{% if opts.iconName and not opts.text -%} {{ BLOCK }}--only-icon {% endif %}
-	{%- if  opts.text and not opts.iconName -%} {{ BLOCK }}--only-text {% endif %}
-	{{- opts.additionalClasses }}"
+	class="{{ opts.modifs | classWithModifs(BLOCK) }} {% if opts.iconName and not opts.text -%} {{ BLOCK }}--only-icon {% endif %} {%- if  opts.text and not opts.iconName -%} {{ BLOCK }}--only-text {% endif %} {{- opts.additionalClasses }}"
 	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
 		{% if opts.iconName %}
