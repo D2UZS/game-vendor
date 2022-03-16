@@ -1,0 +1,41 @@
+.tab-bar-item {
+	@include font(10px, 14px, 500);
+	color: var(--Content-400);
+	text-align: center;
+
+	fill: var(--Content-900);
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+		padding: 12px 0;
+	}
+
+	&__icon {
+		fill: inherit;
+	}
+
+	&__text {
+		display: block;
+	}
+
+	@include hover {
+		color: var(--Primary-600);
+		fill: var(--Primary-600);
+	}
+
+	&:not(.tab-bar-item--current):active {
+		opacity: var(--press-opacity);
+	}
+
+	&--current {
+		color: var(--Primary-600);
+		fill: var(--Primary-600);
+
+		.tab-bar-item__link {
+			cursor: default;
+		}
+	}
+}

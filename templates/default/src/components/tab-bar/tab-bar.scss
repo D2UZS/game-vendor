@@ -1,0 +1,15 @@
+@import "./elems/__item/__item.scss";
+
+.tab-bar {
+	width: 100%;
+
+	background-color: var(--Base);
+	box-shadow: var(--Shadow-Medium-Invert);
+	border-radius: 8px 8px 0px 0px;
+	&__list {
+		display: flex;
+	}
+	&__item {
+		width: 100%;
+	}
+}

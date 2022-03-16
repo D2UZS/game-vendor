@@ -6,12 +6,13 @@
 		{% block additionalMeta %}{% endblock %}
 	</head>
 	<body>
-		{# {% include "sections/header/header.html" %} #}
+		{% include "@sections/header/header.html" %}
 
-		<main class="app-main">
+		<main class="main">
 			{% block content %}{% endblock %}
 		</main>
 
+		{% include "@sections/footer/footer.html" %}
 		{% include "../scripts.html" %}
 	</body>
 </html>

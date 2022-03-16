@@ -1,0 +1,26 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"iconName": "home"
+} %}
+
+{# Макрос компонента #}
+{% macro userNavItem(opts = {
+	"iconName": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "user-nav-item" %}
+
+	{# Код компонента #}
+	<li class="{{ BLOCK }} user-nav__item">
+		<a class="{{ BLOCK }}__link" href="#">
+			<svg class="{{ BLOCK }}__icon" width="20px" height="20px">
+				<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
+			</svg>
+		</a>
+	</li>
+{% endmacro %}

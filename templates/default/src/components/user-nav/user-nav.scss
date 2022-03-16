@@ -1,0 +1,9 @@
+@import "./elems/__item/__item.scss";
+
+.user-nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+}

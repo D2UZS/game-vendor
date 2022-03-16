@@ -1,6 +1,9 @@
 body {
 	width: 100%;
+	min-width: 320px;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 
 	color: var(--Content-500);
 	font-family: var(--font-main);
@@ -14,6 +17,10 @@ body {
 	// Улучшаем рендеринг шрифтов на маках
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+	flex-grow: 1;
 }
 
 .container {

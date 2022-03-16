@@ -1,0 +1,17 @@
+.user-nav-item {
+	&__link {
+	}
+
+	&__icon {
+		display: block;
+		fill: inherit;
+	}
+
+	@include hover {
+		fill: var(--Primary-600);
+	}
+
+	&:active {
+		opacity: var(--press-opacity);
+	}
+}

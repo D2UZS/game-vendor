@@ -1,0 +1,41 @@
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "../../app-location/app-location.njk" import appLocation %}
+{% from "../../app-logo/app-logo.njk" import appLogo %}
+{% from "../../user-nav/user-nav.njk" import userNav %}
+{% from "../../tab-bar/tab-bar.njk" import tabBar %}
+
+{# Класс секции #}
+{% set BLOCK = "header" %}
+
+{# Код секции #}
+<header class="{{ BLOCK }}">
+	<div class="{{ BLOCK }}__banner">1</div>
+	<div class="{{ BLOCK }}__container container">
+		<div class="{{ BLOCK }}__main">
+			{{ appLocation({
+				"additionalClasses": BLOCK + "__location"
+			}) }}
+			{{ appLogo({
+				"additionalClasses": BLOCK + "__logo"
+			}) }}
+			{{ userNav({
+				"additionalClasses": BLOCK + "__user-nav"
+			}) }}
+		</div>
+	</div>
+	<hr class="{{ BLOCK }}__divider">
+	<div class="{{ BLOCK }}__container container">
+		<nav class="{{ BLOCK }}__navigation">
+			<ul class="{{ BLOCK }}__navigation-list">
+				{% for item in globalData.json.header %}
+					<li class="{{ BLOCK }}__navigation-item">
+						<a class="{{ BLOCK }}__navigation-link" href="#">{{ item }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+	{{ tabBar({
+		"additionalClasses": BLOCK + "__tab-bar"
+	}) }}
+</header>

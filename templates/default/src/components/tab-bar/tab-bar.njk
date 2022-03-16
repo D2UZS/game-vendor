@@ -1,0 +1,40 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение дочерних элементов #}
+{% from "./elems/__item/__item.njk" import tabBarItem %}
+
+{# Значения по умолчанию #}
+{% set defaults = {} %}
+
+{# Макрос компонента #}
+{% macro tabBar(opts = {
+	"additionalClasses": "",
+	"modifs": []
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "tab-bar" %}
+
+	{# Код компонента #}
+	<nav class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		<ul class="{{ BLOCK }}__list">
+			{% for item in globalData.json.tabBar %}
+				{% if loop.index === 1 %}
+					{{ tabBarItem({
+						"modifs": ["current"],
+						"iconName": item.iconName,
+						"iconText": item.iconText
+				}) }}
+				{% else %}
+					{{ tabBarItem({
+							"iconName": item.iconName,
+							"iconText": item.iconText
+					}) }}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+
+{% endmacro %}

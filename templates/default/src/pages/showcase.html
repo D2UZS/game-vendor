@@ -6,14 +6,25 @@
 
 {% block content %}
 
-	{# app-location / app-logo #}
+	{# app-location / app-logo / user-nav #}
 	<section class="section">
-		<h2>app-location / app-logo</h2>
+		<h2>app-location / app-logo / user-nav</h2>
 		<div class="section__content section__content--col">
 			{# appLocation #}
 			{% include "../components/@showcase/app-location.html" %}
 			{# appLogo #}
 			{% include "../components/@showcase/app-logo.html" %}
+			{# userNav #}
+			{% include "../components/@showcase/user-nav.html" %}
+		</div>
+	</section>
+
+	{# tab-bar #}
+	<section class="section">
+		<h2>tab-bar</h2>
+		<div class="section__content section__content--col">
+			{# tabBar #}
+			{% include "../components/@showcase/tab-bar.html" %}
 		</div>
 	</section>
 

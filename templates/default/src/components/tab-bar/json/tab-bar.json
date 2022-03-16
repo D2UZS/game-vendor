@@ -1,6 +1,5 @@
 {
 	"json": {
-		"example": [],
 		"tabBar": [
 			{
 				"iconName": "home",
@@ -22,18 +21,6 @@
 				"iconName": "cart",
 				"iconText": "Cart"
 			}
-		],
-		"header": [
-			"Discover",
-			"Browse",
-			"Store",
-			"Platforms",
-			"Releases",
-			"Mobile",
-			"Articles",
-			"Blog",
-			"News",
-			"Contacts"
 		]
 	}
 }

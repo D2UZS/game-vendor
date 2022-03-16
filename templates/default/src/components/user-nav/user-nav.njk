@@ -1,0 +1,46 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение дочерних элементов #}
+{% from "./elems/__item/__item.njk" import userNavItem %}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"elems": {
+		"item": [
+			{
+				"iconName": "search"
+			}, {
+				"iconName": "user"
+			}, {
+				"iconName": "cart"
+			}
+		]
+	}
+} %}
+
+{# Макрос компонента #}
+{% macro userNav(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"elems": {
+		"item": []
+	}
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "user-nav" %}
+
+	{# Код компонента #}
+	<nav class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		<ul class="{{ BLOCK }}__list">
+			{% for item in opts.elems.item %}
+				{{ userNavItem({
+						"iconName": item.iconName
+				}) }}
+			{% endfor %}
+		</ul>
+	</nav>
+
+{% endmacro %}

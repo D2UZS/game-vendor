@@ -1,0 +1,30 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"iconName": "home",
+	"iconText": "Home"
+} %}
+
+{# Макрос компонента #}
+{% macro tabBarItem(opts = {
+	"modifs": [],
+	"iconName": "",
+	"iconText": ""
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "tab-bar-item" %}
+
+	{# Код компонента #}
+	<li class="{{ opts.modifs | classWithModifs(BLOCK) }} tab-bar__item">
+		<a class="{{ BLOCK }}__link" href="#">
+			<svg class="{{ BLOCK }}__icon" width="20px" height="20px">
+				<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
+			</svg>
+			<span class="{{ BLOCK }}__text">{{ opts.iconText }}</span>
+		</a>
+	</li>
+{% endmacro %}
