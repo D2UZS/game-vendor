@@ -11,8 +11,10 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-star" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("app-star") }} {{ opts.additionalClasses }}"></div>
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}"></div>
 
 {% endmacro %}

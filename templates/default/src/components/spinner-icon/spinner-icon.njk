@@ -11,10 +11,12 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "spinner-icon" %}
 
 	{# Код компонента #}
-	<span class="{{ opts.modifs | classWithModifs("spinner-icon") }} {{ opts.additionalClasses }}">
-		<svg class="spinner-icon__loading" width="20px" height="20px">
+	<span class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		<svg class="{{ BLOCK }}__loading" width="20px" height="20px">
 			<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
 		</svg>
 	</span>

@@ -21,10 +21,12 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-link" %}
 
 	{# Код компонента #}
 	<{{ opts.tagName }}
-	class="{{ opts.modifs | classWithModifs("app-link") }} {{ opts.additionalClasses }}"
+	class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}"
 	{% if opts.tagName === 'a' %}href="{{ opts.linkPath }}"{% endif %}
 	>
 

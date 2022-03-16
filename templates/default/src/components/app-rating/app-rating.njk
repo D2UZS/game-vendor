@@ -19,14 +19,16 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-rating" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("app-rating") }} {{ opts.additionalClasses }}">
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{{ appStars({
-			"additionalClasses": "app-rating__stars",
+			"additionalClasses": BLOCK + "__stars",
 			"amountStars": opts.amountStars
 		}) }}
-		<span class="app-rating__votes">{{ opts.votes }}</span>
+		<span class="{{ BLOCK }}__votes">{{ opts.votes }}</span>
 	</div>
 
 {% endmacro %}

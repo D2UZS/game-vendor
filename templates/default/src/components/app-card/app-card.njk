@@ -76,12 +76,14 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-card" %}
 
 	{# Код компонента #}
-	<a class="{{ opts.modifs | classWithModifs("app-card") }} {{ opts.additionalClasses }}" href="#">
-		<div class="app-card__img">
+	<a class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}" href="#">
+		<div class="{{ BLOCK }}__img">
 			{{ simplePicture({
-				"additionalClasses": "app-card__pic",
+				"additionalClasses": BLOCK + "__pic",
 				"imagePath": opts.elems.simplePicture.imagePath,
 				"imageName": opts.elems.simplePicture.imageName,
 				"imageType": opts.elems.simplePicture.imageType,
@@ -89,37 +91,37 @@
 			}) }}
 			{{ appButton({
 				"tagName": "button",
-				"additionalClasses": "app-card__btn-delete",
+				"additionalClasses": BLOCK + "__btn-delete",
 				"modifs": opts.elems.btnDelete.modifs,
 				"iconName": "cross"
 			}) }}
 		</div>
-		<div class="app-card__information">
-			<div class="app-card__details">
+		<div class="{{ BLOCK }}__information">
+			<div class="{{ BLOCK }}__details">
 				{{ categoryBadge({
-					"additionalClasses": "app-card__category-badge",
+					"additionalClasses": BLOCK + "__category-badge",
 					"modifs": opts.elems.categoryBadge.modifs,
 					"text": opts.elems.categoryBadge.text
 				}) }}
-				<span class="app-card__title">{{ opts.elems.title }}</span>
+				<span class="{{ BLOCK }}__title">{{ opts.elems.title }}</span>
 				{{ appRating({
-					"additionalClasses": "app-card__rating",
+					"additionalClasses": BLOCK + "__rating",
 					"amountStars": opts.elems.appRating.amountStars,
 					"votes": opts.elems.appRating.votes
 				}) }}
-				<div class="app-card__description">
+				<div class="{{ BLOCK }}__description">
 					<p>{{ opts.elems.description }}</p>
 				</div>
 			</div>
-			<hr class="app-card__divider">
-			<div class="app-card__prices">
+			<hr class="{{ BLOCK }}__divider">
+			<div class="{{ BLOCK }}__prices">
 				{{ appPrice({
-					"additionalClasses": "app-card__price",
+					"additionalClasses": BLOCK + "__price",
 					"oldPrice": opts.elems.appPrice.oldPrice,
 					"actualPrice": opts.elems.appPrice.actualPrice
 				}) }}
 				{{ saleBadge({
-					"additionalClasses": "app-card__sale-badge",
+					"additionalClasses": BLOCK + "__sale-badge",
 					"text": opts.elems.saleBadge.text
 				}) }}
 			</div>

@@ -23,9 +23,11 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-select" %}
 
 	{# Код компонента #}
-	<select class="{{ opts.modifs | classWithModifs("app-select") }} {{ opts.additionalClasses }} js-choices">
+	<select class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }} js-choices">
 		{% for item in opts.contentData or contentData %}
 			{% if loop.index === 1 and item.isPlaceholder %}
 				<option value="">{{ item.text }}</option>

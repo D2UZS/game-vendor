@@ -15,13 +15,15 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-price" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("app-price") }} {{ opts.additionalClasses }}">
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{% if opts.oldPrice %}
-			<span class="app-price__old">${{ opts.oldPrice }}</span>
+			<span class="{{ BLOCK }}__old">${{ opts.oldPrice }}</span>
 		{% endif %}
-		<span class="app-price__actual">${{ opts.actualPrice }}</span>
+		<span class="{{ BLOCK }}__actual">${{ opts.actualPrice }}</span>
 	</div>
 
 {% endmacro %}

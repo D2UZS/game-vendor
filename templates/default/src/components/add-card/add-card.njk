@@ -26,14 +26,16 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "add-card" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("add-card") }} {{ opts.additionalClasses }}">
-		<div class="add-card__information">
-			<div class="add-card__description">You can add a product card by clicking on the button</div>
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		<div class="{{ BLOCK }}__information">
+			<div class="{{ BLOCK }}__description">You can add a product card by clicking on the button</div>
 			{{ appButton({
 				"tagName": "button",
-				"additionalClasses": "add-card__btn",
+				"additionalClasses": BLOCK + "__btn",
 				"modifs": opts.elems.btn.modifs,
 				"text": opts.elems.btn.text,
 				"iconName": "plus-circle"

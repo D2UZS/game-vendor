@@ -17,21 +17,23 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-stars" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("app-stars") }} {{ opts.additionalClasses }}">
-		<div class="app-stars__inner">
-			<div class="app-stars__grey-stars">
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		<div class="{{ BLOCK }}__inner">
+			<div class="{{ BLOCK }}__grey-stars">
 				{% for i in range(0, 5) %}
 					{{ appStar({
-						"additionalClasses": "app-stars__star"
+						"additionalClasses": BLOCK + "__star"
 					}) }}
 				{% endfor %}
 			</div>
-			<div class="app-stars__yellow-stars" style="--amount-stars: {{ opts.amountStars }}; width: calc(var(--amount-stars) / 5 * 100%);">
+			<div class="{{ BLOCK }}__yellow-stars" style="--amount-stars: {{ opts.amountStars }}; width: calc(var(--amount-stars) / 5 * 100%);">
 				{% for i in range(0, 5) %}
 					{{ appStar({
-						"additionalClasses": "app-stars__star",
+						"additionalClasses": BLOCK + "__star",
 						"modifs": ["yellow"]
 					}) }}
 				{% endfor %}

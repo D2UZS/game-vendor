@@ -18,9 +18,11 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "simple-picture" %}
 
 	{# Код компонента #}
-	<picture class="{{ opts.modifs | classWithModifs("simple-picture") }} {{ opts.additionalClasses }}">
+	<picture class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{% if opts.hasMobileVersion %}
 			<source
 				type="image/webp"

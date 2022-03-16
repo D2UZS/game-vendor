@@ -14,9 +14,11 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "sale-badge" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("sale-badge") }} {{ opts.additionalClasses }}">
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{{- opts.text -}}
 	</div>
 

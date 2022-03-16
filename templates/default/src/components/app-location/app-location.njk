@@ -29,16 +29,18 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-location" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("app-location") }} {{ opts.additionalClasses }}">
-		<svg class="app-location__icon" width="20px" height="20px">
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		<svg class="{{ BLOCK }}__icon" width="20px" height="20px">
 			<use xlink:href="images/icons/sprites/user-icons.svg#pin"></use>
 		</svg>
 		{{ appLink({
 			"tagName": opts.elems.appLink.tagName,
 			"linkPath": opts.elems.appLink.linkPath,
-			"additionalClasses": "app-location__link",
+			"additionalClasses": BLOCK + "__link",
 			"modifs": ["dark-grey", "medium"],
 			"text": opts.elems.appLink.text
 		}) }}

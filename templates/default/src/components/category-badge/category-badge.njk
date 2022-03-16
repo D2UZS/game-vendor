@@ -14,9 +14,11 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "category-badge" %}
 
 	{# Код компонента #}
-	<span class="{{ opts.modifs | classWithModifs("category-badge") }} {{ opts.additionalClasses }}">
+	<span class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{{ opts.text }}
 	</span>
 

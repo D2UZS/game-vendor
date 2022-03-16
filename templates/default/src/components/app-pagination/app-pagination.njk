@@ -15,16 +15,18 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-pagination" %}
 
 	{# Код компонента #}
-	<div class="{{ opts.modifs | classWithModifs("app-pagination") }} {{ opts.additionalClasses }}">
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{{ appPaginationArrowBtn({
 			"iconName": "arrow-left"
 		}) }}
 
-		<ul class="app-pagination__pages">
+		<ul class="{{ BLOCK }}__pages">
 			{{ appPaginationPageBtn({
-				"additionalClasses": "app-pagination__btn"
+				"additionalClasses": BLOCK + "__btn"
 			}) }}
 		</ul>
 

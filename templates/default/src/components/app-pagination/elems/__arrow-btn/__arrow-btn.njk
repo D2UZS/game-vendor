@@ -12,9 +12,11 @@
 
 	{# Подключение значений по умолчанию #}
 	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "pagination-arrow-btn" %}
 
 	{# Код компонента #}
-	<a class="pagination-arrow-btn app-pagination__btn" href="#">
+	<a class="{{ BLOCK }} app-pagination__btn" href="#">
 		<svg width="20px" height="20px">
 			<use xlink:href="images/icons/sprites/user-icons.svg#{{ opts.iconName }}"></use>
 		</svg>
