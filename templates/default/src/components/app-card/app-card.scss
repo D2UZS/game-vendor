@@ -1,5 +1,6 @@
 .app-card {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	width: 280px;
 	padding: 12px 12px 20px;
 
@@ -8,14 +9,6 @@
 
 	cursor: pointer;
 	transition: var(--Animation);
-
-	@include hover {
-		box-shadow: var(--Shadow-Large);
-	}
-
-	&:active {
-		opacity: var(--press-opacity);
-	}
 
 	&__img {
 		position: relative;
@@ -26,18 +19,24 @@
 	&__pic {
 		width: 100%;
 		height: 200px;
+
+		border-radius: 8px;
+		overflow: hidden;
 	}
 
 	&__btn-delete {
 		position: absolute;
 		top: 8px;
 		right: 8px;
+
+		opacity: 0;
 	}
 
 	&__information {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		flex-basis: 100%;
 		padding: 0 12px;
 	}
 
@@ -45,6 +44,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
+		flex-basis: 100%;
 	}
 
 	&__category-badge {
@@ -61,7 +61,6 @@
 
 	&__description {
 		@extend .Body-S-Regular;
-
 		color: var(--Content-400);
 	}
 
@@ -73,6 +72,7 @@
 	}
 
 	&__prices {
+		min-height: 26px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -84,5 +84,17 @@
 	}
 
 	&__sale-badge {
+	}
+
+	@include hover {
+		box-shadow: var(--Shadow-Large);
+
+		.app-card__btn-delete {
+			opacity: 1;
+		}
+	}
+
+	&:active {
+		opacity: var(--press-opacity);
 	}
 }

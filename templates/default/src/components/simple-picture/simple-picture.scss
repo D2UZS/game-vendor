@@ -2,6 +2,10 @@
 	display: block;
 
 	background-color: var(--Content-100);
+	background-image: url(../images/simple-picture/img.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 	img {
 		width: 100%;

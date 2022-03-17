@@ -133,6 +133,841 @@
 		</nav>
 	</header>
 	<main class="main main--catalog">
+		<section class="catalog">
+			<div class="catalog__container container">
+				<h2 class="visually-hidden">Catalog</h2>
+				<ul class="catalog__list">
+					<li class="catalog__item">
+						<div class="add-card catalog__add-card">
+							<div class="add-card__information">
+								<div class="add-card__description">You can add a product card by clicking on the button</div>
+								<button class="app-button add-card__btn">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#plus-circle"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span> Add card
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img1.webp, images/catalog/img1@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img1.jpg, images/catalog/img1@2x.jpg 2x">
+									<img src="images/catalog/img1.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action-rpg app-card__category-badge"> Action RPG </span>
+									<span class="app-card__title">Saints Row</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 0; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">0</span>
+									</div>
+									<div class="app-card__description">
+										<p>Platinum Edition</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img2.webp, images/catalog/img2@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img2.jpg, images/catalog/img2@2x.jpg 2x">
+									<img src="images/catalog/img2.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--multiplayer-rpg app-card__category-badge"> Multiplayer RPG </span>
+									<span class="app-card__title">Paladins</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">1,820</span>
+									</div>
+									<div class="app-card__description">
+										<p>Get the Captain Price Operator included with purchase</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__actual">Free</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img3.webp, images/catalog/img3@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img3.jpg, images/catalog/img3@2x.jpg 2x">
+									<img src="images/catalog/img3.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action app-card__category-badge"> Action </span>
+									<span class="app-card__title">Far Cry 6</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">2,888</span>
+									</div>
+									<div class="app-card__description">
+										<p>In-Game Content</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img4.webp, images/catalog/img4@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img4.jpg, images/catalog/img4@2x.jpg 2x">
+									<img src="images/catalog/img4.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--shooter app-card__category-badge"> Shooter </span>
+									<span class="app-card__title">Call of Duty: Warzone</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 3; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">18,982</span>
+									</div>
+									<div class="app-card__description">
+										<p>Get the Captain Price Operator included with purchase</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img5.webp, images/catalog/img5@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img5.jpg, images/catalog/img5@2x.jpg 2x">
+									<img src="images/catalog/img5.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action app-card__category-badge"> Action </span>
+									<span class="app-card__title">World of Warcraft: Shadowlands</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 3.5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">299</span>
+									</div>
+									<div class="app-card__description">
+										<p>Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__actual">Free</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img6.webp, images/catalog/img6@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img6.jpg, images/catalog/img6@2x.jpg 2x">
+									<img src="images/catalog/img6.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--shooter app-card__category-badge"> Shooter </span>
+									<span class="app-card__title">Fortnite</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4.5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">9,199</span>
+									</div>
+									<div class="app-card__description">
+										<p>Get the Captain Price Operator included with purchase</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img7.webp, images/catalog/img7@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img7.jpg, images/catalog/img7@2x.jpg 2x">
+									<img src="images/catalog/img7.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action-rpg app-card__category-badge"> Action RPG </span>
+									<span class="app-card__title">Horizon: Forbidden West</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4.5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">9,199</span>
+									</div>
+									<div class="app-card__description">
+										<p>Platinum Edition</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img8.webp, images/catalog/img8@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img8.jpg, images/catalog/img8@2x.jpg 2x">
+									<img src="images/catalog/img8.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action app-card__category-badge"> Action </span>
+									<span class="app-card__title">Need for Speed: Heat</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4.5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">2,911</span>
+									</div>
+									<div class="app-card__description">
+										<p>Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__actual">$649</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img9.webp, images/catalog/img9@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img9.jpg, images/catalog/img9@2x.jpg 2x">
+									<img src="images/catalog/img9.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action app-card__category-badge"> Action </span>
+									<span class="app-card__title">Spider-Man: Miles Morales</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 3; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">920</span>
+									</div>
+									<div class="app-card__description">
+										<p>Get the Captain Price Operator included with purchase</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img10.webp, images/catalog/img10@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img10.jpg, images/catalog/img10@2x.jpg 2x">
+									<img src="images/catalog/img10.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--card-game app-card__category-badge"> Card Game </span>
+									<span class="app-card__title">Witcher 3: Wild Hunt</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">299,890</span>
+									</div>
+									<div class="app-card__description">
+										<p>Will only be usable in the new Classic Format when it is released</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img11.webp, images/catalog/img11@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img11.jpg, images/catalog/img11@2x.jpg 2x">
+									<img src="images/catalog/img11.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--shooter app-card__category-badge"> Shooter </span>
+									<span class="app-card__title">Guardians of the Galaxy</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 3; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">29</span>
+									</div>
+									<div class="app-card__description">
+										<p>In-Game Content</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img12.webp, images/catalog/img12@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img12.jpg, images/catalog/img12@2x.jpg 2x">
+									<img src="images/catalog/img12.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--shooter app-card__category-badge"> Shooter </span>
+									<span class="app-card__title">Crash Team Racing</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4.5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">9,199</span>
+									</div>
+									<div class="app-card__description">
+										<p>Get the Captain Price Operator included with purchase</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__old">$1,299</span>
+										<span class="app-price__actual">$649</span>
+									</div>
+									<div class="sale-badge app-card__sale-badge">-50%</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/img13.webp, images/catalog/img13@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/img13.jpg, images/catalog/img13@2x.jpg 2x">
+									<img src="images/catalog/img13.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--multiplayer-rpg app-card__category-badge"> Multiplayer RPG </span>
+									<span class="app-card__title">Spider-Man</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 4.5; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">9,199</span>
+									</div>
+									<div class="app-card__description">
+										<p>Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+									<div class="app-price app-card__price">
+										<span class="app-price__actual">$649</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="catalog__item">
+						<a class="app-card catalog__app-card" href="#">
+							<div class="app-card__img">
+								<picture class="simple-picture app-card__pic">
+									<source type="image/webp" srcset="images/catalog/plug.webp, images/catalog/plug@2x.webp 2x">
+									<source type="image/jpg" srcset="images/catalog/plug.jpg, images/catalog/plug@2x.jpg 2x">
+									<img src="images/catalog/plug.jpg" alt="alt">
+								</picture>
+								<button class="app-button app-button--red app-button--medium app-button--only-icon app-card__btn-delete">
+									<svg class="app-button__icon" width="20px" height="20px">
+										<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+									</svg>
+									<span class="spinner-icon app-button__loading">
+										<svg class="spinner-icon__loading" width="20px" height="20px">
+											<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+							<div class="app-card__information">
+								<div class="app-card__details">
+									<span class="category-badge category-badge--action-rpg app-card__category-badge"> Action RPG </span>
+									<span class="app-card__title">Dragon Age 5</span>
+									<div class="app-rating app-card__rating">
+										<div class="app-stars app-rating__stars">
+											<div class="app-stars__inner">
+												<div class="app-stars__grey-stars">
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+													<div class="app-star app-stars__star"></div>
+												</div>
+												<div class="app-stars__yellow-stars" style="--amount-stars: 0; width: calc(var(--amount-stars) / 5 * 100%);">
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+													<div class="app-star app-star--yellow app-stars__star"></div>
+												</div>
+											</div>
+										</div>
+										<span class="app-rating__votes">0</span>
+									</div>
+									<div class="app-card__description">
+										<p>Non released</p>
+									</div>
+								</div>
+								<hr class="app-card__divider">
+								<div class="app-card__prices">
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 		<section class="faq">
 			<div class="faq__container container">
 				<h2 class="faq__title">Frequently asked questions</h2>

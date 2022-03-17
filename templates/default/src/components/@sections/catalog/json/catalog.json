@@ -1,71 +1,5 @@
 {
 	"json": {
-		"example": [],
-		"tabBar": [
-			{
-				"iconName": "home",
-				"iconText": "Home"
-			},
-			{
-				"iconName": "browse",
-				"iconText": "Browse"
-			},
-			{
-				"iconName": "search",
-				"iconText": "Search"
-			},
-			{
-				"iconName": "user",
-				"iconText": "Account"
-			},
-			{
-				"iconName": "cart",
-				"iconText": "Cart"
-			}
-		],
-		"footer": [
-			{
-				"title": "Categories",
-				"links": [
-					"Strategy",
-					"Action",
-					"Shooter",
-					"Card Game",
-					"Simulator",
-					"RPG",
-					"Multiplayer"
-				]
-			},
-			{
-				"title": "Company",
-				"links": [
-					"About us",
-					"Careers",
-					"Press",
-					"News",
-					"Contact"
-				]
-			},
-			{
-				"title": "Legal",
-				"links": [
-					"Terms",
-					"Privacy",
-					"Cookies",
-					"Licenses",
-					"Settings"
-				]
-			},
-			{
-				"title": "Legal",
-				"links": [
-					"Twitter",
-					"Facebook",
-					"Dribbble",
-					"GitHub"
-				]
-			}
-		],
 		"catalog": {
 			"appCards": [
 				{
@@ -404,18 +338,6 @@
 					}
 				}
 			]
-		},
-		"header": [
-			"Discover",
-			"Browse",
-			"Store",
-			"Platforms",
-			"Releases",
-			"Mobile",
-			"Articles",
-			"Blog",
-			"News",
-			"Contacts"
-		]
+		}
 	}
 }

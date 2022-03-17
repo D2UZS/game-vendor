@@ -2,7 +2,7 @@
 
 {# Значения по умолчанию #}
 {% set defaults = {
-	"actualPrice": "649"
+	"actualPrice": "$649"
 } %}
 
 {# Макрос компонента #}
@@ -21,9 +21,9 @@
 	{# Код компонента #}
 	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
 		{% if opts.oldPrice %}
-			<span class="{{ BLOCK }}__old">${{ opts.oldPrice }}</span>
+			<span class="{{ BLOCK }}__old">{{ opts.oldPrice }}</span>
 		{% endif %}
-		<span class="{{ BLOCK }}__actual">${{ opts.actualPrice }}</span>
+		<span class="{{ BLOCK }}__actual">{{ opts.actualPrice }}</span>
 	</div>
 
 {% endmacro %}

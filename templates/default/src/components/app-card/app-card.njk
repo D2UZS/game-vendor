@@ -30,13 +30,8 @@
 			"votes": "9,199"
 		},
 		"description": "Get the Captain Price Operator included with purchase",
-		"appPrice": {
-			"oldPrice": "1,299",
-			"actualPrice": "649"
-		},
-		"saleBadge": {
-			"text": "-50%"
-		}
+		"appPrice": "",
+		"saleBadge": ""
 	}
 } %}
 
@@ -115,15 +110,19 @@
 			</div>
 			<hr class="{{ BLOCK }}__divider">
 			<div class="{{ BLOCK }}__prices">
-				{{ appPrice({
-					"additionalClasses": BLOCK + "__price",
-					"oldPrice": opts.elems.appPrice.oldPrice,
-					"actualPrice": opts.elems.appPrice.actualPrice
-				}) }}
-				{{ saleBadge({
-					"additionalClasses": BLOCK + "__sale-badge",
-					"text": opts.elems.saleBadge.text
-				}) }}
+				{% if opts.elems.appPrice %}
+					{{ appPrice({
+						"additionalClasses": BLOCK + "__price",
+						"oldPrice": opts.elems.appPrice.oldPrice,
+						"actualPrice": opts.elems.appPrice.actualPrice
+					}) }}
+				{% endif %}
+				{% if opts.elems.saleBadge %}
+					{{ saleBadge({
+						"additionalClasses": BLOCK + "__sale-badge",
+						"text": opts.elems.saleBadge.text
+					}) }}
+				{% endif %}
 			</div>
 		</div>
 	</a>

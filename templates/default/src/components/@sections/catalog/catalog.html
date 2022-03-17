@@ -1,0 +1,39 @@
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "../../add-card/add-card.njk" import addCard %}
+{% from "../../app-card/app-card.njk" import appCard %}
+
+{# Класс секции #}
+{% set BLOCK = "catalog" %}
+
+{# Код секции #}
+<section class="{{ BLOCK }}">
+	<div class="{{ BLOCK }}__container container">
+		<h2 class="visually-hidden">Catalog</h2>
+		<ul class="{{ BLOCK }}__list">
+			<li class="{{ BLOCK }}__item">
+				{{ addCard({"additionalClasses": BLOCK + "__add-card"}) }}
+			</li>
+			{% for card in globalData.json.catalog.appCards %}
+				<li class="{{ BLOCK }}__item">
+					{{ appCard({
+						"additionalClasses": BLOCK + "__app-card",
+						"elems": {
+							"simplePicture": {
+								"imagePath": "images/catalog/",
+								"imageName": card.elems.simplePicture.imageName,
+								"imageType": "jpg",
+								"hasMobileVersion": false
+							},
+							"categoryBadge": card.elems.categoryBadge,
+							"title": card.elems.title,
+							"appRating": card.elems.appRating,
+							"description": card.elems.description,
+							"appPrice": card.elems.appPrice,
+							"saleBadge": card.elems.saleBadge
+						}
+					}) }}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
