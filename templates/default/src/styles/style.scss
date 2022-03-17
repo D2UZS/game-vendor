@@ -1,14 +1,17 @@
-// *** normalize ***
-@import "base/normalize.scss";
-// *** Базовые ***
+// *** mixins ***
 @import "base/mixins.scss";
+
+// *** Базовые ***
+@import "base/normalize.scss";
 @import "base/null.scss";
-@import "base/fonts.scss";
 @import "base/variables.scss";
 @import "base/colors.scss";
-@import "base/typography.scss";
-@import "base/base.scss";
-
+@import "base/fonts.scss";
+// *** Стилевые компоненты ***
+@import "components/typography.scss";
+@import "components/body.scss";
+@import "components/container.scss";
+@import "components/main.scss";
 // *** Плагины ***
 @import "plugins/plugins.scss";
 @import "plugins/users/**/*.scss";

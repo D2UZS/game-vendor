@@ -1,0 +1,20 @@
+body {
+	width: 100%;
+	min-width: 320px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	color: var(--Content-500);
+	font-family: var(--font-main);
+	@extend .Body-M-Regular;
+
+	background-color: var(--Content-50);
+
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+
+	// Улучшаем рендеринг шрифтов на маках
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

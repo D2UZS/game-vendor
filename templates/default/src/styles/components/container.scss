@@ -1,0 +1,15 @@
+.container {
+	--max-width: 1216px;
+
+	max-width: calc(var(--max-width) + (var(--safe-padding) * 2));
+	margin: 0 auto;
+
+	padding: 0 var(--safe-padding);
+
+	@include max-w__1279 {
+		--max-width: 976px;
+	}
+	@include max-w__1023 {
+		--max-width: 720px;
+	}
+}
