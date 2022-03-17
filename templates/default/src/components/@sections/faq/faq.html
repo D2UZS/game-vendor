@@ -1,0 +1,42 @@
+{# Подключение компонентов, которые использует этот компонент #}
+{# {% from "../../app-location/app-location.njk" import appLocation %} #}
+
+{# Класс секции #}
+{% set BLOCK = "faq" %}
+
+{# Код секции #}
+<section class="{{ BLOCK }}">
+	<div class="{{ BLOCK }}__container container">
+		<h2 class="{{ BLOCK }}__title">Frequently asked questions</h2>
+		<span class="{{ BLOCK }}__description">Everything you need to know about the games.</span>
+		<div class="{{ BLOCK }}__accordions">
+			<details class="{{ BLOCK }}__accordion">
+				<summary class="{{ BLOCK }}__accordion-title">How does work?</summary>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas tempore tenetur ipsam culpa deleniti nostrum est magni dolore saepe. Cum laudantium autem aut placeat, cumque impedit mollitia labore quibusdam animi.</p>
+			</details>
+			<details class="{{ BLOCK }}__accordion">
+				<summary class="{{ BLOCK }}__accordion-title">What is a game?</summary>
+				<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset.</p>
+				<ul class="ul">
+					<li class="li">motion sensing device,</li>
+					<li class="li">controller,</li>
+					<li class="li">keyboard,</li>
+					<li class="li">joystick.</li>
+				</ul>
+				<span class="h4">Visual feedback.</span>
+				<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback.</p>
+			</details>
+			<details class="{{ BLOCK }}__accordion">
+				<summary class="{{ BLOCK }}__accordion-title">Is there a free trial available?</summary>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas tempore tenetur ipsam culpa deleniti nostrum est magni dolore saepe. Cum laudantium autem aut placeat, cumque impedit mollitia labore quibusdam animi.</p>
+			</details>
+			<details class="{{ BLOCK }}__accordion">
+				<summary class="{{ BLOCK }}__accordion-title">How does billing work?</summary>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas tempore tenetur ipsam culpa deleniti nostrum est magni dolore saepe. Cum laudantium autem aut placeat, cumque impedit mollitia labore quibusdam animi.</p>
+			</details>
+		</div>
+	</div>
+	{# {{ tabBar({
+		"additionalClasses": BLOCK + "__tab-bar"
+	}) }} #}
+</section>

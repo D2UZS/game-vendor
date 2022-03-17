@@ -21,6 +21,15 @@ body {
 
 .main {
 	flex-grow: 1;
+	padding-top: 40px;
+
+	@include max-w__1279 {
+		padding-top: 32px;
+	}
+
+	@include max-w__767 {
+		padding-top: 20px;
+	}
 }
 
 .container {

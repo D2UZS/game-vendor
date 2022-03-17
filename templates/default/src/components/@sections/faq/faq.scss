@@ -1,0 +1,90 @@
+.faq {
+	margin-bottom: 80px;
+
+	&__title,
+	&__description {
+		display: block;
+		margin-bottom: 20px;
+
+		text-align: center;
+	}
+
+	&__title {
+		@extend .Display-Medium;
+		color: var(--Content-900);
+	}
+
+	&__description {
+		@extend .Body-M-Regular;
+		color: var(--Content-500);
+	}
+
+	&__accordions {
+	}
+
+	&__accordion {
+		@extend .Body-M-Regular;
+		color: var(--Content-500);
+
+		border-bottom: 1px solid var(--Content-300);
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&-title {
+			padding: 24px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px;
+
+			@extend .Body-L-Medium;
+			color: var(--Content-900);
+			list-style: none;
+
+			cursor: pointer;
+
+			&::after {
+				content: "";
+
+				width: 20px;
+				height: 20px;
+
+				background-image: url(../images/icons/plus-circle.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+
+		.ul,
+		p {
+			padding-bottom: 20px;
+		}
+
+		.h4 {
+			padding: 12px 0 16px;
+		}
+	}
+
+	&__accordion[open] {
+		padding-bottom: 20px;
+
+		.faq__accordion-title {
+			&::after {
+				background-image: url(../images/icons/minus-circle.svg);
+			}
+		}
+	}
+
+	@include max-w__767 {
+		&__title,
+		&__description {
+			text-align: left;
+		}
+		&__title {
+			margin-bottom: 16px;
+
+			@include font(24px, 28px, 600);
+		}
+	}
+}
