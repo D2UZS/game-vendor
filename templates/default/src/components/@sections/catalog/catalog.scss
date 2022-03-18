@@ -6,6 +6,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 32px;
+		margin-bottom: 40px;
 	}
 
 	&__item {
@@ -21,9 +22,17 @@
 		height: 100%;
 	}
 
+	&__pagination {
+	}
+
+	&__more-btn {
+		display: none;
+	}
+
 	@include max-w__1279 {
 		&__list {
 			grid-template-columns: repeat(3, 1fr);
+			margin-bottom: 32px;
 		}
 	}
 
@@ -36,6 +45,16 @@
 	@include max-w__767 {
 		&__list {
 			grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+		}
+
+		&__pagination {
+			display: none;
+		}
+
+		&__more-btn {
+			display: flex;
+			max-width: unset;
+			width: 100%;
 		}
 	}
 }

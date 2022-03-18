@@ -97,4 +97,10 @@
 	&:active {
 		opacity: var(--press-opacity);
 	}
+
+	@include max-w__1023 {
+		&__btn-delete {
+			opacity: 1;
+		}
+	}
 }

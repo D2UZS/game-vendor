@@ -1,6 +1,8 @@
 {# Подключение компонентов, которые использует этот компонент #}
 {% from "../../add-card/add-card.njk" import addCard %}
 {% from "../../app-card/app-card.njk" import appCard %}
+{% from "../../app-pagination/app-pagination.njk" import appPagination %}
+{% from "../../app-button/app-button.njk" import appButton %}
 
 {# Класс секции #}
 {% set BLOCK = "catalog" %}
@@ -35,5 +37,11 @@
 				</li>
 			{% endfor %}
 		</ul>
+		{{ appPagination({"additionalClasses": BLOCK + "__pagination"}) }}
+		{{ appButton({
+			"additionalClasses": BLOCK + "__more-btn",
+			"modifs": ["tertiary"],
+			"text": "Show more"
+		}) }}
 	</div>
 </section>
