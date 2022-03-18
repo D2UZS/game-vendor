@@ -1,0 +1,33 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Значения по умолчанию #}
+{% set defaults = {
+	"linksData": ["Home", "Discover", "Games"]
+} %}
+
+{# Макрос компонента #}
+{% macro appBreadcrumbs(opts = {
+	"additionalClasses": "",
+	"modifs": [],
+	"linksData": []
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "app-breadcrumbs" %}
+
+	{# Код компонента #}
+	<ul class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }}">
+		{% for item in opts.linksData %}
+			<li class="{{ BLOCK }}__item">
+				{% if loop.last %}
+					<span class="{{ BLOCK }}__current">{{ item }}</span>
+				{% else %}
+					<a class="{{ BLOCK }}__link" href="#" >{{ item }}</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% endmacro %}

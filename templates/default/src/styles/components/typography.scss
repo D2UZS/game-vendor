@@ -65,6 +65,17 @@
 	}
 }
 
+.h1 {
+	display: block;
+
+	@extend .Display-ExtraLarge;
+	color: var(--Content-900);
+
+	@include max-w__767 {
+		@include font(28px, 32px, 600);
+	}
+}
+
 .h4 {
 	display: block;
 

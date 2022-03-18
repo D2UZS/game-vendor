@@ -1,6 +1,5 @@
 .main {
 	flex-grow: 1;
-	padding-top: 40px;
 
 	&--catalog {
 		.catalog {
@@ -12,9 +11,11 @@
 	}
 
 	@include max-w__1279 {
-		padding-top: 32px;
-
 		&--catalog {
+			.page-top {
+				margin-bottom: 32px;
+			}
+
 			.catalog {
 				margin-bottom: 60px;
 			}
@@ -22,6 +23,10 @@
 	}
 
 	@include max-w__767 {
-		padding-top: 20px;
+		&--catalog {
+			.page-top {
+				margin-bottom: 20px;
+			}
+		}
 	}
 }

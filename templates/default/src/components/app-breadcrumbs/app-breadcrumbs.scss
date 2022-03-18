@@ -1,0 +1,36 @@
+.app-breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+
+	@extend .Body-S-Medium;
+	color: var(--Content-500);
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		&:not(:last-child)::after {
+			content: "";
+			width: 16px;
+			height: 16px;
+			background-image: url(../images/icons/arrow-right-grey.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	&__link {
+		@include hover {
+			color: var(--Primary-600);
+		}
+
+		&:active {
+			opacity: var(--press-opacity);
+		}
+	}
+	&__current {
+		color: var(--Content-300);
+	}
+}

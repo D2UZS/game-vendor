@@ -1,0 +1,29 @@
+.page-top {
+	padding-top: 40px;
+
+	&__container {
+	}
+
+	&__app-breadcrumbs {
+		margin-bottom: 32px;
+	}
+
+	&__title {
+	}
+
+	@include max-w__1279 {
+		padding-top: 32px;
+
+		&__app-breadcrumbs {
+			margin-bottom: 20px;
+		}
+	}
+
+	@include max-w__767 {
+		padding-top: 20px;
+
+		&__app-breadcrumbs {
+			margin-bottom: 16px;
+		}
+	}
+}

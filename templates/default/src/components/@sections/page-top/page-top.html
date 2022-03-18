@@ -1,0 +1,17 @@
+{# Подключение компонентов, которые использует эта секция #}
+{% from "../../app-breadcrumbs/app-breadcrumbs.njk" import appBreadcrumbs %}
+
+{# Класс секции #}
+{% set BLOCK = "page-top" %}
+
+{# Код секции #}
+<div class="{{ BLOCK }}">
+	<div class="{{ BLOCK }}__container container">
+		{{ appBreadcrumbs({
+			"additionalClasses": BLOCK + "__app-breadcrumbs",
+			"linksData": ["Home", "Discover", "Games"]
+		}) }}
+
+		<h1 class="{{ BLOCK }}__title h1">Games</h1>
+	</div>
+</div>
