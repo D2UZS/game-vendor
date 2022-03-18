@@ -3,6 +3,8 @@
 {% from "../../app-card/app-card.njk" import appCard %}
 {% from "../../app-pagination/app-pagination.njk" import appPagination %}
 {% from "../../app-button/app-button.njk" import appButton %}
+{% from "../../app-input/app-input.njk" import appInput %}
+{% from "../../app-select/app-select.njk" import appSelect %}
 
 {# Класс секции #}
 {% set BLOCK = "catalog" %}
@@ -11,6 +13,47 @@
 <section class="{{ BLOCK }}">
 	<div class="{{ BLOCK }}__container container">
 		<h2 class="visually-hidden">Catalog</h2>
+		<form class="{{ BLOCK }}__filters">
+			<div class="{{ BLOCK }}__filters-inputs">
+				<label class="{{ BLOCK }}__filters-search app-label">
+					<span class="app-label__title">Search for games</span>
+					{{ appInput({
+						"additionalClasses": "app-label__input",
+						"modifs": ["search"],
+						"type": "text",
+						"placeholder": "Search..."
+					}) }}
+				</label>
+				<label class="{{ BLOCK }}__filters-category app-label">
+					<span class="app-label__title">Category</span>
+					{{ appSelect({
+						"additionalClasses": "app-label__input"
+					}) }}
+				</label>
+				<label class="{{ BLOCK }}__filters-sort app-label">
+					<span class="app-label__title">Sort by</span>
+					{{ appSelect({
+						"additionalClasses": "app-label__input"
+					}) }}
+				</label>
+				{{ appButton({
+					"additionalClasses": BLOCK + "__filters-btn",
+					"modifs": ["tertiary"],
+					"text": "Filters",
+					"iconName": "filter"
+				}) }}
+			</div>
+			<div class="{{ BLOCK }}__filters-tags">
+				{% for tag in globalData.json.catalog.filters.tags %}
+					{{ appButton({
+							"additionalClasses": BLOCK + "__filters-tag",
+							"modifs": ["medium", "tag", "icon-after-txt"],
+							"text": tag,
+							"iconName": "cross"
+						}) }}
+				{% endfor %}
+			</div>
+		</form>
 		<ul class="{{ BLOCK }}__list">
 			<li class="{{ BLOCK }}__item">
 				{{ addCard({"additionalClasses": BLOCK + "__add-card"}) }}

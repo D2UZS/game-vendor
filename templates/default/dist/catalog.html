@@ -136,6 +136,94 @@
 		<section class="catalog">
 			<div class="catalog__container container">
 				<h2 class="visually-hidden">Catalog</h2>
+				<form class="catalog__filters">
+					<div class="catalog__filters-inputs">
+						<label class="catalog__filters-search app-label">
+							<span class="app-label__title">Search for games</span>
+							<input class="app-input app-input--search app-label__input" type="text" placeholder="Search...">
+						</label>
+						<label class="catalog__filters-category app-label">
+							<span class="app-label__title">Category</span>
+							<select class="app-select app-label__input js-choices">
+								<option value="">This is a placeholder</option>
+								<option value="Рыба текст 2">Рыба текст 2</option>
+								<option value="Рыба текст 3">Рыба текст 3</option>
+								<option value="Рыба текст 4">Рыба текст 4</option>
+							</select>
+						</label>
+						<label class="catalog__filters-sort app-label">
+							<span class="app-label__title">Sort by</span>
+							<select class="app-select app-label__input js-choices">
+								<option value="">This is a placeholder</option>
+								<option value="Рыба текст 2">Рыба текст 2</option>
+								<option value="Рыба текст 3">Рыба текст 3</option>
+								<option value="Рыба текст 4">Рыба текст 4</option>
+							</select>
+						</label>
+						<button class="app-button app-button--tertiary catalog__filters-btn">
+							<svg class="app-button__icon" width="20px" height="20px">
+								<use xlink:href="images/icons/sprites/user-icons.svg#filter"></use>
+							</svg>
+							<span class="spinner-icon app-button__loading">
+								<svg class="spinner-icon__loading" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+								</svg>
+							</span> Filters
+						</button>
+					</div>
+					<div class="catalog__filters-tags">
+						<button class="app-button app-button--medium app-button--tag app-button--icon-after-txt catalog__filters-tag">
+							<svg class="app-button__icon" width="20px" height="20px">
+								<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+							</svg>
+							<span class="spinner-icon app-button__loading">
+								<svg class="spinner-icon__loading" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+								</svg>
+							</span> Strategy
+						</button>
+						<button class="app-button app-button--medium app-button--tag app-button--icon-after-txt catalog__filters-tag">
+							<svg class="app-button__icon" width="20px" height="20px">
+								<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+							</svg>
+							<span class="spinner-icon app-button__loading">
+								<svg class="spinner-icon__loading" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+								</svg>
+							</span> RPG
+						</button>
+						<button class="app-button app-button--medium app-button--tag app-button--icon-after-txt catalog__filters-tag">
+							<svg class="app-button__icon" width="20px" height="20px">
+								<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+							</svg>
+							<span class="spinner-icon app-button__loading">
+								<svg class="spinner-icon__loading" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+								</svg>
+							</span> Action
+						</button>
+						<button class="app-button app-button--medium app-button--tag app-button--icon-after-txt catalog__filters-tag">
+							<svg class="app-button__icon" width="20px" height="20px">
+								<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+							</svg>
+							<span class="spinner-icon app-button__loading">
+								<svg class="spinner-icon__loading" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+								</svg>
+							</span> Shooter
+						</button>
+						<button class="app-button app-button--medium app-button--tag app-button--icon-after-txt catalog__filters-tag">
+							<svg class="app-button__icon" width="20px" height="20px">
+								<use xlink:href="images/icons/sprites/user-icons.svg#cross"></use>
+							</svg>
+							<span class="spinner-icon app-button__loading">
+								<svg class="spinner-icon__loading" width="20px" height="20px">
+									<use xlink:href="images/icons/sprites/user-icons.svg#spinner"></use>
+								</svg>
+							</span> Clear all
+						</button>
+					</div>
+				</form>
 				<ul class="catalog__list">
 					<li class="catalog__item">
 						<div class="add-card catalog__add-card">

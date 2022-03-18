@@ -1,0 +1,14 @@
+.app-label {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	&__title {
+		@extend .Body-S-Medium;
+		color: var(--Content-500);
+	}
+
+	&__input {
+		width: 100%;
+	}
+}

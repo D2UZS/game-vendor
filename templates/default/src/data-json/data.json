@@ -23,49 +23,6 @@
 				"iconText": "Cart"
 			}
 		],
-		"footer": [
-			{
-				"title": "Categories",
-				"links": [
-					"Strategy",
-					"Action",
-					"Shooter",
-					"Card Game",
-					"Simulator",
-					"RPG",
-					"Multiplayer"
-				]
-			},
-			{
-				"title": "Company",
-				"links": [
-					"About us",
-					"Careers",
-					"Press",
-					"News",
-					"Contact"
-				]
-			},
-			{
-				"title": "Legal",
-				"links": [
-					"Terms",
-					"Privacy",
-					"Cookies",
-					"Licenses",
-					"Settings"
-				]
-			},
-			{
-				"title": "Legal",
-				"links": [
-					"Twitter",
-					"Facebook",
-					"Dribbble",
-					"GitHub"
-				]
-			}
-		],
 		"catalog": {
 			"appCards": [
 				{
@@ -403,8 +360,60 @@
 						"description": "Non released"
 					}
 				}
-			]
+			],
+			"filters": {
+				"tags": [
+					"Strategy",
+					"RPG",
+					"Action",
+					"Shooter",
+					"Clear all"
+				]
+			}
 		},
+		"footer": [
+			{
+				"title": "Categories",
+				"links": [
+					"Strategy",
+					"Action",
+					"Shooter",
+					"Card Game",
+					"Simulator",
+					"RPG",
+					"Multiplayer"
+				]
+			},
+			{
+				"title": "Company",
+				"links": [
+					"About us",
+					"Careers",
+					"Press",
+					"News",
+					"Contact"
+				]
+			},
+			{
+				"title": "Legal",
+				"links": [
+					"Terms",
+					"Privacy",
+					"Cookies",
+					"Licenses",
+					"Settings"
+				]
+			},
+			{
+				"title": "Legal",
+				"links": [
+					"Twitter",
+					"Facebook",
+					"Dribbble",
+					"GitHub"
+				]
+			}
+		],
 		"header": [
 			"Discover",
 			"Browse",

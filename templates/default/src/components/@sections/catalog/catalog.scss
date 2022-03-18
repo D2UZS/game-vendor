@@ -2,6 +2,37 @@
 	&__container {
 	}
 
+	&__filters {
+		margin-bottom: 40px;
+	}
+
+	&__filters-inputs {
+		display: flex;
+		display: grid;
+		grid-template-columns: 2fr repeat(2, 1fr);
+		gap: 16px;
+		margin-bottom: 32px;
+	}
+
+	&__filters-search {
+	}
+	&__filters-category {
+	}
+	&__filters-sort {
+	}
+	&__filters-btn {
+		display: none;
+	}
+	&__filters-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	&__filters-tag {
+		flex-shrink: 0;
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -30,6 +61,14 @@
 	}
 
 	@include max-w__1279 {
+		&__filters-inputs {
+			// Дизайнер считает ширину колонок по другой формуле. Делаем по дизайну.
+			--width-col: calc((100% - 16px) / 2);
+			--width-col-2: calc((var(--width-col) - 16px) / 2);
+			grid-template-columns: var(--width-col) repeat(2, var(--width-col-2));
+			margin-bottom: 20px;
+		}
+
 		&__list {
 			grid-template-columns: repeat(3, 1fr);
 			margin-bottom: 32px;
@@ -43,6 +82,30 @@
 	}
 
 	@include max-w__767 {
+		&__filters-inputs {
+			grid-template-columns: 1fr;
+			margin-bottom: 16px;
+		}
+
+		&__filters-category,
+		&__filters-sort {
+			display: none;
+		}
+
+		&__filters-btn {
+			display: flex;
+			max-width: unset;
+			width: 100%;
+		}
+
+		&__filters-tags {
+			width: calc(100% + var(--safe-padding) * 2);
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			margin-left: var(--safe-padding--);
+			padding: 0 var(--safe-padding);
+		}
+
 		&__list {
 			grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 		}

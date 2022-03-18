@@ -337,7 +337,16 @@
 						"description": "Non released"
 					}
 				}
-			]
+			],
+			"filters": {
+				"tags": [
+					"Strategy",
+					"RPG",
+					"Action",
+					"Shooter",
+					"Clear all"
+				]
+			}
 		}
 	}
 }
