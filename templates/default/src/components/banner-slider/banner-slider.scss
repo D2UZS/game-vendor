@@ -1,0 +1,53 @@
+.banner-slider {
+	position: relative;
+
+	&__item {
+		padding: 8px 28px;
+		display: flex;
+		justify-content: center;
+
+		background: var(--Primary-600);
+		border-radius: 4px;
+	}
+
+	&__text {
+		@extend .Body-M-Regular;
+		color: var(--Base);
+		text-align: center;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+
+		transform: translateY(-50%);
+
+		display: block;
+		fill: var(--Base);
+		cursor: pointer;
+
+		&:not(.swiper-button-disabled):active {
+			opacity: var(--press-opacity);
+		}
+
+		&.swiper-button-disabled {
+			fill: var(--Primary-500);
+			cursor: default;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 8px;
+	}
+	.swiper-button-next {
+		right: 8px;
+	}
+
+	@include max-w__1023 {
+		&__text {
+			@include font(14px, 20px);
+		}
+	}
+}

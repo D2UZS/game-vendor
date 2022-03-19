@@ -1,0 +1,38 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение компонентов, которые использует этот компонент #}
+
+{# Значения по умолчанию #}
+{% set defaults = {} %}
+
+{# Макрос компонента #}
+{% macro bannerSlider(opts = {
+	"additionalClasses": "",
+	"modifs": []
+}) %}
+
+	{# Подключение значений по умолчанию #}
+	{% set opts = defaults | concatWithObject(opts) %}
+	{# Класс компонента #}
+	{% set BLOCK = "banner-slider" %}
+
+	{# Код компонента #}
+	<div class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }} js-{{ BLOCK }} swiper">
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			{% for item in range(0, 3) %}
+				<div class="{{ BLOCK }}__item swiper-slide">
+					<span class="{{ BLOCK }}__text">Refer a&nbsp;friend and get $10&nbsp;off! 🔥 Offer ends February&nbsp;27!</span>
+				</div>
+			{% endfor %}
+		</div>
+
+		<svg class="swiper-button-prev" width="20px" height="20px">
+			<use xlink:href="images/icons/sprites/user-icons.svg#arrow-left"></use>
+		</svg>
+		<svg class="swiper-button-next" width="20px" height="20px">
+			<use xlink:href="images/icons/sprites/user-icons.svg#arrow-right"></use>
+		</svg>
+	</div>
+
+{% endmacro %}

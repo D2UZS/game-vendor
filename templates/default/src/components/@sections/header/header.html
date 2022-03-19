@@ -1,4 +1,5 @@
 {# Подключение компонентов, которые использует этот компонент #}
+{% from "../../banner-slider/banner-slider.njk" import bannerSlider %}
 {% from "../../app-location/app-location.njk" import appLocation %}
 {% from "../../app-logo/app-logo.njk" import appLogo %}
 {% from "../../user-nav/user-nav.njk" import userNav %}
@@ -9,7 +10,9 @@
 
 {# Код секции #}
 <header class="{{ BLOCK }}">
-	<div class="{{ BLOCK }}__banner">1</div>
+	<div class="{{ BLOCK }}__banner">
+		{{ bannerSlider({"additionalClasses": BLOCK + "__banner-slider"}) }}
+	</div>
 	<div class="{{ BLOCK }}__container container">
 		<div class="{{ BLOCK }}__main">
 			{{ appLocation({
