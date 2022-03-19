@@ -1,0 +1,33 @@
+{# Подключение компонентов, которые использует эта секция #}
+{% from "../../app-button/app-button.njk" import appButton %}
+{% from "../../simple-picture/simple-picture.njk" import simplePicture %}
+
+{# Класс секции #}
+{% set BLOCK = "banner" %}
+
+{# Код секции #}
+<section class="{{ BLOCK }}">
+	<div class="{{ BLOCK }}__container container">
+		{{ simplePicture({
+			"additionalClasses": BLOCK + "__picture",
+			"imagePath": "images/banner/",
+			"imageName": "img",
+			"imageType": "png",
+			"hasMobileVersion": false
+		}) }}
+		<div class="{{ BLOCK }}__inner">
+			<div class="{{ BLOCK }}__text-content">
+				<h2 class="{{ BLOCK }}__title">Refer a&nbsp;friends and get $10&nbsp;off!</h2>
+				<div class="{{ BLOCK }}__description">
+					<p>Connect with friends. Refer a&nbsp;friend and unlock your $10&nbsp;coupon! Offer ends February&nbsp;27.</p>
+				</div>
+				{{ appButton({
+				"tagName": "button",
+				"additionalClasses": BLOCK + "__btn",
+				"modifs": ["tertiary"],
+				"text": "Invite a friend"
+			}) }}
+			</div>
+		</div>
+	</div>
+</section>

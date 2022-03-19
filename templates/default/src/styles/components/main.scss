@@ -2,6 +2,9 @@
 	flex-grow: 1;
 
 	&--catalog {
+		.banner {
+			margin-bottom: 60px;
+		}
 		.catalog {
 			margin-bottom: 80px;
 		}
@@ -16,6 +19,10 @@
 				margin-bottom: 32px;
 			}
 
+			.banner {
+				margin-bottom: 40px;
+			}
+
 			.catalog {
 				margin-bottom: 60px;
 			}
@@ -26,6 +33,10 @@
 		&--catalog {
 			.page-top {
 				margin-bottom: 20px;
+			}
+
+			.banner {
+				margin-bottom: 32px;
 			}
 		}
 	}

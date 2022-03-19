@@ -1,5 +1,6 @@
 // *** mixins ***
 @import "base/mixins.scss";
+@import "base/media-mixins.scss";
 
 // *** Базовые ***
 @import "base/normalize.scss";
@@ -46,5 +47,6 @@
 @import "../components/@sections/header/header.scss";
 @import "../components/@sections/page-top/page-top.scss";
 @import "../components/@sections/catalog/catalog.scss";
+@import "../components/@sections/banner/banner.scss";
 @import "../components/@sections/faq/faq.scss";
 @import "../components/@sections/footer/footer.scss";

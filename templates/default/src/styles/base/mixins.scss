@@ -2,42 +2,6 @@
 // *** Миксины ***
 // ********************
 
-// *** Установка параметров шрифта ***
-@mixin font($font-size: 16px, $line-height: 24px, $font-weight: null) {
-	font-size: $font-size;
-	line-height: $line-height;
-	font-weight: $font-weight;
-}
-
-@mixin max-w__374 {
-	@media (max-width: 374px) {
-		@content;
-	}
-}
-@mixin max-w__767 {
-	@media (max-width: 767px) {
-		@content;
-	}
-}
-@mixin max-w__1023 {
-	@media (max-width: 1023px) {
-		@content;
-	}
-}
-@mixin max-w__1279 {
-	@media (max-width: 1279px) {
-		@content;
-	}
-}
-
-@mixin hover {
-	@media (hover: hover) {
-		&:hover {
-			@content;
-		}
-	}
-}
-
 // Str-replace function
 @function str-replace($string, $search, $replace: "") {
 	$index: str-index($string, $search);
@@ -74,5 +38,33 @@
 		font-weight: $weight;
 		font-display: swap;
 		src: $src;
+	}
+}
+
+// *** Установка параметров шрифта ***
+@mixin font($font-size: 16px, $line-height: 24px, $font-weight: null) {
+	font-size: $font-size;
+	line-height: $line-height;
+	font-weight: $font-weight;
+}
+
+// *** Установка бэкграунда ***
+@mixin bgc($image: null, $image2x: null, $color: null, $repeat: null, $size: null, $position: null) {
+	background-color: $color;
+	background-image: $image;
+	// Retina-экранам
+	@media (min-resolution: 2dppx) {
+		background-image: $image2x;
+	}
+	background-repeat: $repeat;
+	background-size: $size;
+	background-position: $position;
+}
+
+@mixin hover {
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
 	}
 }

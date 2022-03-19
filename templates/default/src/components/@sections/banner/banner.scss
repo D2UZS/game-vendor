@@ -1,0 +1,145 @@
+.banner {
+	&__container {
+		position: relative;
+
+		padding-top: 40px;
+	}
+
+	&__picture {
+		position: absolute;
+		bottom: 0;
+		right: 98px;
+		height: 448px;
+
+		background: unset;
+	}
+
+	&__inner {
+		min-height: 408px;
+		padding: 72px;
+
+		@include bgc(
+			url("../images/banner/banner-bg.jpg"),
+			url("../images/banner/banner-bg@2x.jpg"),
+			var(--Primary-600),
+			no-repeat,
+			cover,
+			center
+		);
+
+		border-radius: 16px;
+		overflow: hidden;
+	}
+
+	&__text-content {
+		position: relative;
+		z-index: 1;
+
+		width: 312px;
+		display: flex;
+		flex-direction: column;
+
+		color: var(--Base);
+
+		*:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		margin-bottom: 28px;
+
+		@extend .Display-Large;
+	}
+
+	&__description {
+		margin-bottom: 32px;
+
+		@extend .Body-M-Regular;
+	}
+
+	&__btn {
+	}
+
+	@include max-w__1279 {
+		&__container {
+			padding-top: 0;
+		}
+
+		&__picture {
+			right: 36px;
+			height: 384px;
+		}
+
+		&__inner {
+			min-height: 384px;
+			padding: 60px;
+		}
+
+		&__text-content {
+			width: 315px;
+		}
+	}
+
+	@include max-w__1023 {
+		&__picture {
+			display: none;
+		}
+
+		&__inner {
+			min-height: 324px;
+			padding: 40px;
+
+			@include bgc(
+				// !important нужны, что бы был нужный порядок медиазапросов в итоговой сборке
+				url("../images/banner/banner-bg-mw-1023.jpg") !important,
+				url("../images/banner/banner-bg-mw-1023@2x.jpg") !important
+			);
+		}
+
+		&__text-content {
+			width: 280px;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+
+			@include font(32px, 38px);
+		}
+	}
+
+	@include max-w__767 {
+		&__inner {
+			min-height: 448px;
+			padding: 32px;
+			display: flex;
+
+			@include bgc(
+				// !important нужны, что бы был нужный порядок медиазапросов в итоговой сборке
+				url("../images/banner/banner-bg-mw-767.jpg") !important,
+				url("../images/banner/banner-bg-mw-767@2x.jpg") !important
+			);
+
+			box-shadow: var(--Shadow-Large);
+		}
+
+		&__text-content {
+			width: 100%;
+		}
+
+		&__title {
+			margin-bottom: 16px;
+
+			@include font(24px, 28px);
+		}
+
+		&__description {
+		}
+
+		&__btn {
+			margin-top: auto;
+			max-width: unset;
+			width: 100%;
+		}
+	}
+}
