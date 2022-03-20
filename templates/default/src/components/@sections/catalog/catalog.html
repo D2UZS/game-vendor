@@ -27,13 +27,46 @@
 				<label class="{{ BLOCK }}__filters-category app-label">
 					<span class="app-label__title">Category</span>
 					{{ appSelect({
-						"additionalClasses": "app-label__input"
+						"additionalClasses": "app-label__input",
+						"id": "select-category",
+						"optionData": [
+							{
+								"value": "RPG",
+								"isSelected": true
+							}, {
+								"value": "Action",
+								"isSelected": true
+							}, {
+								"value": "Card Game"
+							}, {
+								"value": "Multiplayer"
+							}, {
+								"value": "Shooter",
+								"isSelected": true
+							}, {
+								"value": "Strategy",
+								"isSelected": true
+							}
+						],
+						"isMultiple": true
 					}) }}
 				</label>
 				<label class="{{ BLOCK }}__filters-sort app-label">
 					<span class="app-label__title">Sort by</span>
 					{{ appSelect({
-						"additionalClasses": "app-label__input"
+						"additionalClasses": "app-label__input",
+						"id": "select-sort",
+						"optionData": [
+							{
+								"value": "Popular"
+							}, {
+								"value": "Rating"
+							}, {
+								"value": "Price: Low to High"
+							}, {
+								"value": "High to Low"
+							}
+						]
 					}) }}
 				</label>
 				{{ appButton({

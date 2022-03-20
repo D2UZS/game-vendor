@@ -1,23 +1,26 @@
 {#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
 
 {# Значения по умолчанию #}
-{% set defaults = {} %}
-{% set contentData = [
-	{
-		"text": "This is a placeholder",
-		"isPlaceholder": true
-	}, {
-		"text": "Рыба текст 2"
-	}, {
-		"text": "Рыба текст 3"
-	}, {
-		"text": "Рыба текст 4"
-	}
-] %}
+{% set defaults = {
+	"optionData": [
+		{
+			"value": "value 1"
+		}, {
+			"value": "value 2"
+		}, {
+			"value": "value 3"
+		}
+	],
+	"isMultiple": false
+} %}
 
 {# Макрос компонента #}
 {% macro appSelect(opts = {
-	"additionalClasses": ""
+	"additionalClasses": "",
+	"modifs": [],
+	"id": "",
+	"optionData": [],
+	"isMultiple": false
 }) %}
 
 	{# Подключение значений по умолчанию #}
@@ -26,13 +29,12 @@
 	{% set BLOCK = "app-select" %}
 
 	{# Код компонента #}
-	<select class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }} js-choices">
-		{% for item in opts.contentData or contentData %}
-			{% if loop.index === 1 and item.isPlaceholder %}
-				<option value="">{{ item.text }}</option>
-			{% else %}
-				<option value="{{ item.text }}" {% if item.selected %}selected{% endif %}>{{ item.text }}</option>
-			{% endif %}
+	<select
+	class="{{ opts.modifs | classWithModifs(BLOCK) }} {{ opts.additionalClasses }} js-slim-select"
+	{% if opts.id %} id="{{ opts.id }}" {% endif %}
+	{% if opts.isMultiple %} multiple {% endif %}>
+		{% for item in opts.optionData %}
+			<option value="{{ item.value }}" {% if item.isSelected %} selected {% endif %}>{{ item.value }}</option>
 		{% endfor %}
 	</select>
 {% endmacro %}
