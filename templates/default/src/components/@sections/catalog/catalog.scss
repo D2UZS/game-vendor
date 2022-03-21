@@ -9,7 +9,7 @@
 	&__filters-inputs {
 		display: flex;
 		display: grid;
-		grid-template-columns: 2fr repeat(2, 1fr);
+		grid-template-columns: 592px repeat(2, 296px);
 		gap: 16px;
 		margin-bottom: 32px;
 	}
@@ -89,7 +89,7 @@
 
 		&__filters-category,
 		&__filters-sort {
-			// display: none;
+			display: none;
 		}
 
 		&__filters-btn {

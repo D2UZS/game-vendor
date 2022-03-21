@@ -20,6 +20,7 @@
 	"modifs": [],
 	"id": "",
 	"optionData": [],
+	"placeholder": "",
 	"isMultiple": false
 }) %}
 
@@ -34,6 +35,9 @@
 	{% if opts.id %} id="{{ opts.id }}" {% endif %}
 	{% if opts.isMultiple %} multiple {% endif %}>
 		{% for item in opts.optionData %}
+			{% if loop.index === 1 and opts.placeholder %}
+				<option data-placeholder="true">{{ opts.placeholder }}</option>
+			{% endif %}
 			<option value="{{ item.value }}" {% if item.isSelected %} selected {% endif %}>{{ item.value }}</option>
 		{% endfor %}
 	</select>
