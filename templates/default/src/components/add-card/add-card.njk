@@ -34,11 +34,12 @@
 		<div class="{{ BLOCK }}__information">
 			<div class="{{ BLOCK }}__description">You can add a product card by clicking on the button</div>
 			{{ appButton({
-				"tagName": "button",
-				"additionalClasses": BLOCK + "__btn",
+				"tagName": "a",
+				"additionalClasses": BLOCK + "__btn js-popup-btn",
 				"modifs": opts.elems.btn.modifs,
 				"text": opts.elems.btn.text,
-				"iconName": "plus-circle"
+				"iconName": "plus-circle",
+				"linkPath": "#popup-add-card"
 			}) }}
 		</div>
 	</div>

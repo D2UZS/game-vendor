@@ -1,0 +1,31 @@
+.dark-layer {
+	--animation: 0.4s ease 0s;
+
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+
+	transition: visibility var(--animation);
+	visibility: hidden;
+	&::before {
+		content: "";
+		background-color: rgba(0, 0, 0, 0.7);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity var(--animation);
+	}
+	&--active {
+		overflow: hidden;
+		visibility: visible;
+		&::before {
+			opacity: 1;
+		}
+	}
+}

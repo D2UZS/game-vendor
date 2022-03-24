@@ -6,11 +6,16 @@
 		{% block additionalMeta %}{% endblock %}
 	</head>
 	<body>
-		{% include "@sections/header/header.html" %}
+		<div class="wrapper">
+			{% include "@sections/header/header.html" %}
 
-		{% block content %}{% endblock %}
+			{% block content %}{% endblock %}
 
-		{% include "@sections/footer/footer.html" %}
-		{% include "../scripts.html" %}
+			{% include "@sections/footer/footer.html" %}
+
+			{% include "../dark-layer/dark-layer.html" %}
+
+			{% include "../scripts.html" %}
+		</div>
 	</body>
 </html>

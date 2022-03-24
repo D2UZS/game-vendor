@@ -1,0 +1,17 @@
+{#!!! Для понимания, как работает компонент, читай README.md этого компонента !!!#}
+
+{# Подключение шаблона app-popup #}
+{% extends "../../app-popup.njk" %}
+
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "../../../app-button/app-button.njk" import appButton %}
+
+{# Класс компонента #}
+{% set BLOCK = "popup-add-card" %}
+
+{# Код компонента #}
+{% block content %}
+	<div class="{{ BLOCK }}" id="{{ BLOCK }}">
+		<h2>Привет! =)</h2>
+	</div>
+{% endblock %}

@@ -43,6 +43,7 @@
 @import "../components/tab-bar/tab-bar.scss";
 @import "../components/app-breadcrumbs/app-breadcrumbs.scss";
 @import "../components/banner-slider/banner-slider.scss";
+@import "../components/dark-layer/dark-layer.scss";
 
 // *** Секции ***
 @import "../components/@sections/header/header.scss";
@@ -51,3 +52,7 @@
 @import "../components/@sections/banner/banner.scss";
 @import "../components/@sections/faq/faq.scss";
 @import "../components/@sections/footer/footer.scss";
+
+// *** Попапы ***
+@import "../components/app-popup/app-popup.scss";
+@import "../components/app-popup/popups/popup-add-card/popup-add-card.scss";

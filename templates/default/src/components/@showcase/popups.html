@@ -1,0 +1,11 @@
+{% from "app-button/app-button.njk" import appButton %}
+
+{{ appButton({
+	"tagName": "a",
+	"additionalClasses": "js-popup-btn",
+	"modifs": [],
+	"text": "Link",
+	"linkPath": "#popup-add-card"
+}) }}
+
+{% include "../app-popup/popups/popup-add-card/popup-add-card.html" %}

@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        {% include "../meta.html" %}
-        <link rel="stylesheet" href="no-production/styles-for-technical.css">
+	<head>
+		{% include "../meta.html" %}
+		<link rel="stylesheet" href="no-production/styles-for-technical.css">
 
-        {% block additionalMeta %}{% endblock %}
-    </head>
-    <body>
-        <div class="wrapper">
-            <header><h1><a href="index.html" class="">Навигация</a></h1></header>
-            <main class="">
-                {% block content %}{% endblock %}
-            </main>
-        </div>
-        {% include "../scripts.html" %}
-    </body>
+		{% block additionalMeta %}{% endblock %}
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<header>
+					<h1>
+						<a href="index.html" class="">Навигация</a>
+					</h1>
+				</header>
+				<main class="">
+					{% block content %}{% endblock %}
+				</main>
+			</div>
+		</div>
+
+		{% include "../dark-layer/dark-layer.html" %}
+
+		{% include "../scripts.html" %}
+	</body>
 </html>

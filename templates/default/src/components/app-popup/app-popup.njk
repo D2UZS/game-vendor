@@ -1,0 +1,16 @@
+{# Подключение компонентов, которые использует этот компонент #}
+{% from "app-button/app-button.njk" import appButton %}
+
+{% block button %}{% endblock %}
+
+<div class="app-popup js-app-popup">
+	<div class="app-popup__wrapper">
+		{{ appButton({
+			"tagName": "button",
+			"additionalClasses": "app-popup__close-btn",
+			"modifs": ["red"],
+			"iconName": "cross"
+			}) }}
+		{% block content %}{% endblock %}
+	</div>
+</div>

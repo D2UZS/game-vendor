@@ -86,7 +86,9 @@
 		</form>
 		<ul class="{{ BLOCK }}__list">
 			<li class="{{ BLOCK }}__item">
-				{{ addCard({"additionalClasses": BLOCK + "__add-card"}) }}
+				{{ addCard({
+					"additionalClasses": BLOCK + "__add-card"
+				}) }}
 			</li>
 			{% for card in globalData.json.catalog.appCards %}
 				<li class="{{ BLOCK }}__item">
