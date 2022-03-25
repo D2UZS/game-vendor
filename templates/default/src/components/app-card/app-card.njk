@@ -2,7 +2,6 @@
 
 {# Подключение компонентов, которые использует этот компонент #}
 {% from "simple-picture/simple-picture.njk" import simplePicture %}
-{% from "app-button/app-button.njk" import appButton %}
 {% from "category-badge/category-badge.njk" import categoryBadge %}
 {% from "app-rating/app-rating.njk" import appRating %}
 {% from "app-price/app-price.njk" import appPrice %}
@@ -16,9 +15,6 @@
 			"imageName": "img",
 			"imageType": "jpg",
 			"hasMobileVersion": true
-		},
-		"btnDelete": {
-			"modifs": ["red", "medium"]
 		},
 		"categoryBadge": {
 			"modifs": ['shooter'],
@@ -45,9 +41,6 @@
 			"imageName": "",
 			"imageType": "",
 			"hasMobileVersion": false
-		},
-		"btnDelete": {
-			"modifs": []
 		},
 		"categoryBadge": {
 			"modifs": [],
@@ -83,12 +76,6 @@
 				"imageName": opts.elems.simplePicture.imageName,
 				"imageType": opts.elems.simplePicture.imageType,
 				"hasMobileVersion": opts.elems.simplePicture.hasMobileVersion
-			}) }}
-			{{ appButton({
-				"tagName": "button",
-				"additionalClasses": BLOCK + "__btn-delete",
-				"modifs": opts.elems.btnDelete.modifs,
-				"iconName": "cross"
 			}) }}
 		</div>
 		<div class="{{ BLOCK }}__information">

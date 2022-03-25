@@ -10,9 +10,7 @@ module.exports = () => {
                     imagemin.gifsicle({
                         interlaced: true,
                     }),
-                    imagemin.mozjpeg({
-                        progressive: true,
-                    }),
+                    imagemin.mozjpeg({ quality: 85, progressive: true }),
                     imagemin.optipng({
                         optimizationLevel: 5,
                     }),

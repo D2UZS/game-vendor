@@ -1,6 +1,5 @@
 {% from "app-card/app-card.njk" import appCard %}
 
-{# По дефолту #}
 {{ appCard({
 	"additionalClasses": "",
 	"modifs": [],
@@ -10,9 +9,6 @@
 			"imageName": "img",
 			"imageType": "jpg",
 			"hasMobileVersion": true
-		},
-		"btnDelete": {
-			"modifs": ["red", "medium"]
 		},
 		"categoryBadge": {
 			"modifs": ['shooter'],
@@ -31,35 +27,5 @@
 		"saleBadge": {
 			"text": "-50%"
 		}
-	}
-}) }}
-{# Кнопка закрытия с лодером #}
-{{ appCard({
-	"additionalClasses": "",
-	"modifs": [],
-	"elems": {
-		"simplePicture": {
-			"imagePath": "images/simple-picture/",
-			"imageName": "img",
-			"imageType": "jpg",
-			"hasMobileVersion": true
-		},
-		"btnDelete": {
-			"modifs": ["red", "medium", "loading"]
-		},
-		"categoryBadge": {
-			"modifs": ['shooter'],
-			"text": "Shooter"
-		},
-		"title": "Call of Duty: Warzone",
-		"appRating": {
-			"amountStars": 0,
-			"votes": "0"
-		},
-		"description": "Get the Captain Price Operator included with purchase",
-		"appPrice": {
-			"actualPrice": "$649"
-		},
-		"saleBadge": ""
 	}
 }) }}

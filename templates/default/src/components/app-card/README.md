@@ -29,15 +29,6 @@
 "hasMobileVersion": true
 }
 
-#### "elems.btnDelete"
-
-Элемент кнопки удаления.
-Принимает объект с настройками. Подробнее см. app-button.njk
-По умолчанию:
-{
-"modifs": ["red", "medium"]
-}
-
 #### "elems.categoryBadge"
 
 Элемент бейджа с категорией.

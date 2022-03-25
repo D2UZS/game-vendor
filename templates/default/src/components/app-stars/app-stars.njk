@@ -30,7 +30,7 @@
 					}) }}
 				{% endfor %}
 			</div>
-			<div class="{{ BLOCK }}__yellow-stars" style="--amount-stars: {{ opts.amountStars }}; width: calc(var(--amount-stars) / 5 * 100%);">
+			<div class="{{ BLOCK }}__yellow-stars" style="width: calc({{ opts.amountStars }} / 5 * 100%);">
 				{% for i in range(0, 5) %}
 					{{ appStar({
 						"additionalClasses": BLOCK + "__star",

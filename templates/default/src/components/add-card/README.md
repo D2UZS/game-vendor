@@ -21,8 +21,12 @@
 
 Элемент кнопки.
 Принимает объект с настройками. Подробнее см. app-button.njk
+"btn": {
+"additionalClasses": "",
+"linkPath": ""
+}
+
 По умолчанию:
 {
-"modifs": [],
-"text": "Add card"
+"linkPath": "#"
 }

@@ -61,10 +61,18 @@
 	background-position: $position;
 }
 
+// Если устройство поддерживает hover, тогда кнопка будет появляться при hover
 @mixin hover {
 	@media (hover: hover) {
 		&:hover {
 			@content;
 		}
+	}
+}
+
+// Если устройство не поддерживает hover, тогда кнопка будет видна всегда
+@mixin no-hover {
+	@media (hover: none) {
+		@content;
 	}
 }

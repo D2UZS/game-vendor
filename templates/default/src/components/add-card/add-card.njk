@@ -7,7 +7,7 @@
 {% set defaults = {
 	"elems": {
 		"btn": {
-			"text": "Add card"
+			"linkPath": "#"
 		}
 	}
 } %}
@@ -18,8 +18,8 @@
 	"modifs": [],
 	"elems": {
 		"btn": {
-			"modifs": [],
-			"text": ""
+			"additionalClasses": "",
+			"linkPath": ""
 		}
 	}
 }) %}
@@ -35,11 +35,11 @@
 			<div class="{{ BLOCK }}__description">You can add a product card by clicking on the button</div>
 			{{ appButton({
 				"tagName": "a",
-				"additionalClasses": BLOCK + "__btn js-popup-btn",
+				"additionalClasses": BLOCK + "__btn " + opts.elems.btn.additionalClasses,
 				"modifs": opts.elems.btn.modifs,
-				"text": opts.elems.btn.text,
+				"text": "Add card",
 				"iconName": "plus-circle",
-				"linkPath": "#popup-add-card"
+				"linkPath": opts.elems.btn.linkPath
 			}) }}
 		</div>
 	</div>

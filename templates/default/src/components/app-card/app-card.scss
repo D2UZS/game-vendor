@@ -11,8 +11,6 @@
 	transition: var(--Animation);
 
 	&__img {
-		position: relative;
-
 		margin-bottom: 20px;
 	}
 
@@ -22,14 +20,6 @@
 
 		border-radius: 8px;
 		overflow: hidden;
-	}
-
-	&__btn-delete {
-		position: absolute;
-		top: 8px;
-		right: 8px;
-
-		opacity: 0;
 	}
 
 	&__information {
@@ -88,19 +78,9 @@
 
 	@include hover {
 		box-shadow: var(--Shadow-Large);
-
-		.app-card__btn-delete {
-			opacity: 1;
-		}
 	}
 
 	&:active {
 		opacity: var(--press-opacity);
-	}
-
-	@include max-w__1023 {
-		&__btn-delete {
-			opacity: 1;
-		}
 	}
 }

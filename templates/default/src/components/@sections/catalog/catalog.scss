@@ -41,6 +41,29 @@
 	}
 
 	&__item {
+		position: relative;
+
+		&-btn-delete {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+
+			opacity: 0;
+		}
+
+		// Если устройство поддерживает hover, тогда кнопка будет появляться при hover
+		@include hover {
+			.catalog__item-btn-delete {
+				opacity: 1;
+			}
+		}
+
+		// Если устройство не поддерживает hover, тогда кнопка будет видна всегда
+		@include no-hover {
+			.catalog__item-btn-delete {
+				opacity: 1;
+			}
+		}
 	}
 
 	&__add-card {

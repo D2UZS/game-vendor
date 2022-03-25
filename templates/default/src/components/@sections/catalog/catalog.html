@@ -87,7 +87,13 @@
 		<ul class="{{ BLOCK }}__list">
 			<li class="{{ BLOCK }}__item">
 				{{ addCard({
-					"additionalClasses": BLOCK + "__add-card"
+					"additionalClasses": BLOCK + "__add-card",
+					"elems": {
+						"btn": {
+							"additionalClasses": "js-popup-btn",
+							"linkPath": "#popup-add-card"
+						}
+					}
 				}) }}
 			</li>
 			{% for card in globalData.json.catalog.appCards %}
@@ -108,6 +114,12 @@
 							"appPrice": card.elems.appPrice,
 							"saleBadge": card.elems.saleBadge
 						}
+					}) }}
+					{{ appButton({
+						"tagName": "button",
+						"additionalClasses": BLOCK + "__item-btn-delete",
+						"modifs": ["red", "medium"],
+						"iconName": "cross"
 					}) }}
 				</li>
 			{% endfor %}
