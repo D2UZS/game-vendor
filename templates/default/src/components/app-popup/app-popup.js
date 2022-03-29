@@ -1,5 +1,5 @@
 import { DarkLayer } from "../dark-layer/dark-layer";
-import { ScrollControl } from "../../js/plugins/modules/scroll-control";
+import { ScrollControl } from "../../js/scroll-control";
 
 const darkLayer = new DarkLayer();
 const scrollControl = new ScrollControl();

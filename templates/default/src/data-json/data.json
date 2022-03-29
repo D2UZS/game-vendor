@@ -371,6 +371,26 @@
 				]
 			}
 		},
+		"faq": {
+			"accordion": [
+				{
+					"title": "How does work?",
+					"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas tempore tenetur ipsam culpa deleniti nostrum est magni dolore saepe. Cum laudantium autem aut placeat, cumque impedit mollitia labore quibusdam animi.</p>"
+				},
+				{
+					"title": "What is a game?",
+					"content": "<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset.</p><ul><li>motion sensing device,</li><li>controller,</li><li>keyboard,</li><li>joystick.</li></ul><span>Visual feedback.</span><p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback.</p>"
+				},
+				{
+					"title": "",
+					"content": ""
+				},
+				{
+					"title": "",
+					"content": ""
+				}
+			]
+		},
 		"footer": [
 			{
 				"title": "Categories",

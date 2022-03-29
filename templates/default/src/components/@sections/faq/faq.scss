@@ -38,39 +38,31 @@
 
 			@extend .Body-L-Medium;
 			color: var(--Content-900);
-			list-style: none;
 
 			cursor: pointer;
-
-			&::after {
-				content: "";
-
-				width: 20px;
-				height: 20px;
-
-				background-image: url(../images/icons/plus-circle.svg);
-				background-repeat: no-repeat;
-				background-position: center;
-			}
 		}
 
-		.ul,
-		p {
+		&-plus,
+		&-minus {
+			fill: var(--Primary-600);
+		}
+
+		&-minus {
+			display: none;
+		}
+
+		&-content {
 			padding-bottom: 20px;
-		}
-
-		.h4 {
-			padding: 12px 0 16px;
 		}
 	}
 
-	&__accordion[open] {
-		padding-bottom: 20px;
+	&__accordion.js-open {
+		.faq__accordion-plus {
+			display: none;
+		}
 
-		.faq__accordion-title {
-			&::after {
-				background-image: url(../images/icons/minus-circle.svg);
-			}
+		.faq__accordion-minus {
+			display: block;
 		}
 	}
 
